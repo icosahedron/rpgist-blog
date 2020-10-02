@@ -108,6 +108,12 @@ body {
 	line-height: 72px;
 }
 
+#title h2 {
+	font-family: "ITC-Souvenir";
+	font-size: 36px;
+	line-height: 72px;
+}
+
 #title a {
     text-decoration:none;
 	color: #404080;		
