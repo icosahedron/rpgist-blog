@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title><![CDATA[Expertise Dice]]></title>
-        <description><![CDATA[A blog about D&D and other games.]]></description>
+        <description><![CDATA[rpgist: one that specializes in the art or science or skill of RPGs]]></description>
         <link>http://expertisedice.com</link>
         <generator>metalsmith</generator>
         <lastBuildDate>Wed, 04 May 2016 03:50:58 GMT</lastBuildDate>
