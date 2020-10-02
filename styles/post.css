@@ -3,6 +3,11 @@
 	src: url("../fonts/SouvenirStd-Medium.ttf");	
 }
 
+@font-face{
+	font-family: "Source Sans Pro";
+	src: url("../fonts/SourceSansPro-Regular.ttf");	
+}
+
 body {
     background: white center url('../images/bluemap004.jpg');
     background-attachment: fixed;
