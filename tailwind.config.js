@@ -1,5 +1,9 @@
 module.exports = {
   theme: {
+    // fontFamily: {
+    //   'serif': ['ITC-Souvenir'],
+    //   'sans': ['"Source Sans Pro"']
+    // }
     // Some useful comment
   },
   variants: {

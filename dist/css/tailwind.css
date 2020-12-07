@@ -9,7 +9,17 @@
  *
  * @import "tailwindcss/preflight";
  */
-@tailwind preflight;
+@tailwind base;
+
+@font-face {
+  font-family: "ITC-Souvenir";
+  src: url("../fonts/SouvenirStd-Medium.ttf");	
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../fonts/SourceSansPro-Regular.ttf");	
+}
 
 /**
   * This injects any component classes registered by plugins.
@@ -2929,11 +2939,11 @@
 }
 
 .font-sans {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .font-serif {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: "ITC-Souvenir", Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .font-mono {

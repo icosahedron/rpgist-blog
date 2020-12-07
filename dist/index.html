@@ -4,23 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Tailwind Starter Template - Minimal Blog: Tailwind Toolbox</title>
-    <meta name="author" content="name" />
-    <meta name="description" content="description here" />
-    <meta name="keywords" content="keywords,here" />
-    <!-- <link
-      href="https://unpkg.com/tailwindcss/dist/tailwind.min.css"
-      rel="stylesheet"
-    /> --
+    <title>Expertise Dice</title>
+    <meta name="author" content="@icosahedron" />
+    <meta name="description" content="A blog agout RPGs, primarily D&D" />
+    <meta name="keywords" content="rpg, games, dice" />
     <!--Replace with your tailwind.css once created-->
-    <link href="css/tailwind.css" rel="stylesheet" />
+    <link href="css/post.css" rel="stylesheet" />
     <style>
-      ul {
-        list-style: none;
-      }
-      ol {
-        list-style: none;
-      }
       body {
         background: white center url(images/bluemap004.jpg);
         background-attachment: fixed;
@@ -46,10 +36,13 @@
       <div
         class="w-full md:max-w-3xl mx-auto flex flex-wrap items-center justify-between mt-0 py-7"
       >
-        <div class="pl-2 lg:pl-4">
-          <a
-            class="font-bold text-gray-900 text-3xl md:text-4xl lg:text-5xl no-underline hover:no-underline" href="#">The RPGist</a>
-            <span class="pl-2 lg:pl-10 align-bottom"><img src="images/rpgdice.jpeg" class="h-8 md:h-10 lg:h-12" /></span>
+        <div class="pl-2 lg:pl-4 font-serif font-bold text-gray-900 text-3xl md:text-4xl lg:text-5xl">
+          <!-- <a
+            class="font-serif font-bold text-gray-900 text-3xl md:text-4xl lg:text-5xl no-underline hover:no-underline" href="#">The RPGist</a>
+            <span class="pl-2 lg:pl-10 align-bottom"><img src="images/rpgdice.jpeg" class="h-8 md:h-10 lg:h-12" /></span> -->
+          <span class="flex flex-row">
+            <a class="no-underline hover:no-underline" href="#">The RPGist</a>
+            <img src="images/rpgdice.png" class="pl-4 h-8 md:h-10 lg:h-12 mt-1 lg:mt-2" /></span>
         </div>
         <!-- <div class="pl-2 lg:pl-10 pt-2"><img src="images/rpgdice.jpeg" class="h-8 lg:h-12" /></div> -->
         <div class="block pr-6 lg:hidden">
@@ -71,29 +64,37 @@
           id="nav-content"
           class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-gray-100 md:bg-transparent z-20"
         >
-          <ul class="list-reset lg:flex justify-end flex-1 items-center">
+          <ul class="list-reset lg:flex justify-end flex-1 items-center list-none">
             <li class="mr-3">
               <a
-                class="inline-block py-2 px-4 text-gray-900 font-bold no-underline"
+                class="inline-block py-2 px-4 lg:px-2 text-gray-900 font-bold no-underline"
                 href="#"
               >
-                Active
+                Archive
               </a>
             </li>
             <li class="mr-3">
               <a
-                class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4"
+                class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4 lg:px-2"
                 href="#"
               >
-                Link
+                Colophon
               </a>
             </li>
             <li class="mr-3">
               <a
-                class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4"
+                class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4  lg:px-2"
                 href="#"
               >
-                Link
+                Games
+              </a>
+            </li>
+            <li class="mr-3">
+              <a
+                class="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4 lg:px-2"
+                href="#"
+              >
+                Contact
               </a>
             </li>
           </ul>
@@ -234,10 +235,10 @@
       </div>
 
       <!--Divider-->
-      <hr class="border-b-2 border-gray-400 mb-8 mx-4" />
+      <!-- <hr class="border-b-2 border-gray-400 mb-8 mx-4" /> -->
 
       <!--Next & Prev Links-->
-      <div class="font-sans flex justify-between content-center px-4 pb-12">
+      <!-- <div class="font-sans flex justify-between content-center px-4 pb-12">
         <div class="text-left">
           <span class="text-xs md:text-sm font-normal text-gray-600"
             >&lt; Previous Post</span
@@ -265,10 +266,9 @@
             </a>
           </p>
         </div>
-      </div>
+      </div> 
 
-      <!--/Next & Prev Links-->
-    </div>
+    </div> -->
     <!--/container-->
 
     <footer class="border-t border-gray-400 shadow">
