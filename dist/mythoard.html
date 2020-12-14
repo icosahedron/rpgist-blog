@@ -91,151 +91,88 @@
             <!--Title-->
             <div class="font-sans">
                 <h1 class="font-bold font-sans break-normal text-blue-800 pt-6 pb-2 text-2xl md:text-3xl">
-                    Baldur’s Gate Enhanced Edition Fallen Ranger Restore
+                    Mythoard's Monthly Menagerie
                 </h1>
                 <p class="text-sm md:text-base font-normal text-blue-600 pb-6">
-                    Published April 2016
+                    Published December 2014
                 </p>
             </div>
-<p class="pb-6">(This article is valid as of 5/1/2016. It works on Mac and PC, but not
-iPad.)</p>
+<p class="pb-6">On Saturday a strange little package arrived in the mail. I got my first
+Mythoard installment.</p>
 
-<p class="pb-6">I’ve been playing Baldur’s Gate: Enhanced Edition (BGEE) since GOG.com
-had it on sale for $2.99 a few weeks back. I’m not very far along,
-mostly due to time constraints, but I did manage to have my ranger
-become fallen.</p>
+<p class="pb-6">The Mythoard package is delivered monthly and contains miscellaneous RPG
+related contents. It’s like a Jam-of-the-Month club for gamers.</p>
 
-<p class="pb-6">I don’t know why, and the last few save games he was already fallen, and
-I didn’t feel like backtracking that far in the game.</p>
+<h2 class="text-2xl md:text-3xl pb-6">What’s in the Box?</h2>
 
-<p class="pb-6">A few searches later, and I found that it was relatively easy to restore
-a ranger from their fallen state via a script, but the instructions were
-a bit dated and I had to figure some steps on my own, so I thought this
-guide might be handy for others as well.</p>
+<p class="pb-6">The first month’s contents are as follows:</p>
 
-<p class="pb-6">First, these instructions are for OS X since I’m running BGEE on OS X.
-They are likely easy to apply to Windows, and the links I have below
-mention instructions for Windows.</p>
+<p class="pb-6"><a href="http://gothridgemanor.blogspot.kr/2014/11/a-quick-glance-at-mythoard-exclusive.html">Stone Fields of
+Azoroth</a>
+by Gothridge Manor Games - A small module divided into 3 parts, the
+village and two dungeon locations. It’s a short little adventure with
+the bonus of a backdrop village if you need one on the fly. It’s system
+agnostic; NPCs are given basic class/level and monsters are a sort of
+OSR stat block from what I can tell.</p>
 
-<p class="pb-6">I do assume that you are comfortable with Terminal, moving around
-directories, and running command line programs in OS X.</p>
+<p class="pb-6">The packaging is zine format and nothing special, but the artwork is
+nice and a quick read of the adventure gives me some basic ideas for
+where to insert these in a one-off night of gaming.</p>
 
-<h2 class="text-2xl md:text-3xl pb-6">On the Shoulders</h2>
+<p class="pb-6"><a href="http://rpg.drivethrustuff.com/product/128369/10-Treasures-Magic-Items-for-Dungeon-World">10+ Treasures</a>
+by Awful Good Games - this would have been the highlight of the package
+if not for the item that follows. It’s a compilation of 31 magic items
+for Dungeon World. Also, it gives a good treatise on how to make your
+own magic items for DW.</p>
 
-<p class="pb-6">First, I took most of the information from the following 2 links. The
-first references the second, but I included it since it has most of the
-necessary information:</p>
+<p class="pb-6">Very impressive little booklet, with great artwork and superior
+production values for being so inexpensive.</p>
 
-<ul class="pl-2 pb-6">
-<li><a href="https://forums.beamdog.com/discussion/10856/recovering-fallen-paladinranger">Recovering a Fallen Paladin or
-Ranger</a><a href="#fn:1" id="fnref:1" title="see footnote" class="text-sm align-top">1</a></li>
-<li><a href="https://forums.beamdog.com/discussion/6950/player-how-to-getting-mods-to-work-on-bgee/p1">Getting Mods to Work in
-BGEE</a></li>
-</ul>
+<p class="pb-6"><a href="http://www.redkobold.com/blue-dungeon-tiles/">Blue Dungeon Tiles</a> - I
+missed out on the Kickstarter, and having a sampling of these within the
+package was a treat. My favorite product in this month’s package and I
+look forward to purchasing some of these after the holidays.</p>
 
-<p class="pb-6">With these two links you are likely to get everything you need, but they
-do have some outdated information and reference utilities that either
-aren’t available anymore or aren’t really necessary.</p>
+<p class="pb-6">These are map tiles that you can draw on. They are a thick laminate with
+a shape on one side (e.g. corridor) and a 4x4 grid on the other side.
+Kind of like a highly portable, very small Tact-Tiles.</p>
 
-<p class="pb-6">Also, they assume a little more knowledge of BGEE scripting than I had,
-so I have augmented some of their instructions with a little more
-detail.</p>
+<p class="pb-6">There was also a poster for Baby Bestiary. The poster is interesting,
+and the artwork is nice, but mine was bent in shipping.</p>
 
-<h2 class="text-2xl md:text-3xl pb-6">Setup (Download and Locate)</h2>
+<p class="pb-6">Last but not least was a postcard of <em>The Mushroom King</em>. (Somehow very
+unnerving given the message on the back. Great for a Dungeon Crawl
+Classics game probably.)</p>
 
-<p class="pb-6">First, download the WeiDU script compiler. I found it at
-<a href="http://www.weidu.org/~thebigg/">http://www.weidu.org/~thebigg/</a>. Decompress it to somewhere accessible
-(I left mine in the Downloads directory - <code class="font-mono text-sm">~/Downloads/WeiDU-Mac</code>).</p>
+<h2 class="text-2xl md:text-3xl pb-6">Worth $20?</h2>
 
-<p class="pb-6">Next, we need to locate where the script should be placed. The
-instructions mention to locate the <span class="font-mono text-sm">chitin.key</span> file. I guess Spotlight
-doesn’t search application bundles, but I did find it eventually buried
-within the app within the app.</p>
+<p class="pb-6">Hard to say really. The Stone Fields of Azoroth is good quality and an
+exclusive, so that’s worth something.</p>
 
-<p class="pb-6">The final resting place was
-<code class="font-mono text-sm">/Applications/Baldur's Gate Enhanced Edition.app/Contents/Resources/game/Baldur's Gate - Enhanced Edition.app/Contents/Resources</code>.
-Probably the easiest thing to do is to open a terminal and <code class="font-mono text-sm">cd</code> to
-that directory.</p>
+<p class="pb-6">There are only 3 Blue Dungeon Tiles, so not useful as is, but great as a
+preview.</p>
 
-<p class="pb-6">The last thing for setup is making sure that WeiDU can work with the
-BGEE installation. The second link talks about doing this:</p>
+<p class="pb-6">The 10+ Treasures goes for $5 in printed format on RPG Now, + whatever
+shipping would cost you.</p>
 
-<pre class="bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4 overflow-auto">
-<code>ln -s ./lang/en_US/dialog.tlk dialog.tlk
-</code></pre>
+<p class="pb-6">The other items are nice and eclectic, but not exactly what I pine for,
+so probably wouldn’t have purchased them separately.</p>
 
-<h2 class="text-2xl md:text-3xl py-6">Script and Compile</h2>
+<p class="pb-6">Special note on the packaging. The envelope was a thick cardboard with
+that paper-pulse/lint filling that gets everywhere. I hate it. But,
+their newsletter states they are working on getting proper boxes, so
+this should be a short lived complaint.</p>
 
-<p class="pb-6">Now come the changes to restore your ranger.</p>
+<p class="pb-6">I’d say its value is negotiable. 2 definitely will use, one preview for
+something I’m likely to purchase, and other minor collectibles I would
+pass on.</p>
 
-<p class="pb-6">Open your favorite text editor and put in the following script:</p>
+<h2 class="text-2xl md:text-3xl pb-6">What About Next Month?</h2>
 
-<pre class="bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4 overflow-auto">
-<code>IF
-  HotKey(D)
-THEN
-  RESPONSE #100
-    RegainRangerHood()
-END</code>
-</pre>
+<p class="pb-6">I will try it again to see what the contents are. It definitely is fun
+to get a package in the mail every month stuffed with items for your
+gaming habit.</p>
 
-<p class="py-6">Save this into the BGEE directory (I saved it as FallenRanger.baf).</p>
-
-<p class="pb-6">Compile this script into something that BGEE can use:</p>
-
-<pre class="bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4 overflow-auto">
-<code>~/Downloads/WeiDU-Mac/weidu FallenRanger.baf --out scripts --use-lang en_US</code>
-</pre>
-
-<p class="py-6">Last, we have to fix up some of the output to be digestible by BGEE.</p>
-
-<pre class="bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4 overflow-auto">
-<code>cd scripts
-mv FallenRanger.bcs aFall.BS
-chmod ugo+x aFall.BS
-</code></pre>
-
-<p class="py-6">I don’t know why the scripts have to be marked executable, but they are,
-so I followed suit. They don’t appear in BGEE unless they are marked as
-such.</p>
-
-<h2 class="text-2xl md:text-3xl pb-6">“Gorion Would Be Proud of You”</h2>
-
-<p class="pb-6">That magic moment where we again ascend to ranger hood and can charm
-animals and hate on orcs or giants.</p>
-
-<ul class="list-outside list-disc pb-6 pl-10">
-<li>Open BGEE and load your saved game file.</li>
-<li>Turn off Party AI.</li>
-<li>Click on your character.</li>
-<li>Select the character screen, choose customize, choose script, and
-note the currently selected script.</li>
-<li>Find CUSTOM(AFALL) in the list near the bottom, choose it, choose
-done, done, and ESC to exit that screen.</li>
-<li>Select another character.</li>
-<li>Choose Party AI On.</li>
-<li>Select your character again. Type ‘D’. You should hear a message
-similar to “Gorion would be proud of your actions.”</li>
-<li>Go back and choose the script for your character that was
-chosen before. (See above instructions.)</li>
-<li>Save your game.</li>
-</ul>
-
-<p class="pb-6">Voilà, you are now a ranger again!</p>
-
-<hr />
-
-<div class="footnotes">
-<hr />
-<ol class="list-decimal list-inside">
-
-<li id="fn:1">
-This link also works for fallen paladins too, though the script
-would be changed to call <code class="text-sm font-mono">RegainPaladinHood()</code>. The directions in the
-remainder of the document remain the same. <a href="#fnref:1" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
-</li>
-
-</ol>
 </div>
 </div>
 
