@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Expertise Dice</title>
+    <meta name="author" content="@icosahedron" />
+    <meta name="description" content="A blog agout RPGs, primarily D&D" />
+    <meta name="keywords" content="rpg, games, dice" />
+    <!--Replace with your tailwind.css once created-->
+    <link href="css/post.css" rel="stylesheet" />
+    <style>
+        body {
+            background: white center url(images/bluemap004.jpg);
+            background-attachment: fixed;
+            margin: 0px 0px 0px 0px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+</head>
+<!-- afcade -- ><!-- b9d3e3 -->
+<!-- 3182ce -->
+<!-- #90cdf4 -->
+
+<body class="bg-gray-100 text-blue-800 font-sans leading-normal tracking-normal">
+    <nav id="header" class="fixed w-full z-10 top-0 bg-gray-100">
+        <div id="progress" class="h-1 z-20 top-0" style="
+          background: linear-gradient(
+            to right,
+            #90cdf4 var(--scroll),
+            transparent 0
+          );
+        "></div>
+
+        <div class="w-full md:max-w-3xl mx-auto flex flex-wrap items-center justify-between mt-0 py-7">
+            <div class="pl-2 lg:pl-4 font-serif font-bold text-blue-800 text-3xl md:text-4xl lg:text-5xl">
+                <span class="flex flex-row">
+                    <a class="no-underline hover:no-underline" href="#">The RPGist</a>
+                    <img src="images/rpgdice.png" class="pl-4 h-8 md:h-10 lg:h-12 mt-1 lg:mt-2" /></span>
+            </div>
+            <!-- <div class="pl-2 lg:pl-10 pt-2"><img src="images/rpgdice.jpeg" class="h-8 lg:h-12" /></div> -->
+            <div class="block pr-6 lg:hidden">
+                <button id="nav-toggle"
+                    class="flex items-center px-3 py-2 border rounded text-blue-500 border-gray-600 hover:text-blue-800 hover:border-teal-500 appearance-none focus:outline-none">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+
+            <div id="nav-content"
+                class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-gray-100 md:bg-transparent z-20">
+                <ul class="list-reset lg:flex justify-end flex-1 items-center list-none">
+                    <li class="mr-3">
+                        <a class="inline-block py-2 px-4 lg:px-2 text-blue-600 font-bold no-underline"
+                            href="archive.html">
+                            Archive
+                        </a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="inline-block text-blue-600 no-underline hover:text-blue-800 hover:text-underline py-2 px-4 lg:px-2"
+                            href="colophon.html">
+                            Colophon
+                        </a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="inline-block text-blue-600 no-underline hover:text-blue-800 hover:text-underline py-2 px-4  lg:px-2"
+                            href="games.html">
+                            Games
+                        </a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="inline-block text-blue-600 no-underline hover:text-blue-800 hover:text-underline py-2 px-4 lg:px-2"
+                            href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <!--Container-->
+    <div class="container w-full md:max-w-3xl mx-auto pt-20 bg-gray-100">
+        <div class="px-4 md:px-6 text-xl text-blue-800 leading-normal font-sans">
+            <!--Title-->
+            <div class="font-sans">
+                <h1 class="font-bold font-sans break-normal text-blue-800 pt-6 pb-2 text-2xl md:text-3xl">
+                    Advantage, Disadvantage, Edges, and Drawbacks
+                </h1>
+                <p class="text-sm md:text-base font-normal text-blue-600 pb-6">
+                    Published December 2014
+                </p>
+            </div>
+<p class="pb-6">D&amp;D 5e is out in force now. You most likely have your PHB, MM, and DMG
+in hand, or at least hoping Santa brings them to you.</p>
+
+<p class="pb-6">I don’t think there is another mechanic in the new edition that has
+sparked as much interest or devoted so many words as
+Advantage<a href="#fn:1" id="fnref:1" title="see footnote" class="text-sm align-top">1</a>.</p>
+
+<p class="pb-6">Advantage’s appeal is that it’s so simple.</p>
+
+<h2 class="text-2xl md:text-3xl pb-6">Too Advantageous?</h2>
+
+<p class="pb-6">However, Advantage’s (lack of) granularity might make a DM hesitant to
+grant it. The math behind Advantage is not linear, but it does on
+average grant a +4 bonus. Likewise, Disadvantage penalizes rolls by
+–4<a href="#fn:2" id="fnref:2" title="see footnote" class="text-sm align-top">2</a>.</p>
+
+<p class="pb-6">±4 seems too variable too me. Page 42 of the 4e DMG gives a reasonable
+compromise, a static bonus of ±2. But rolling the dice is so much more
+fun!</p>
+
+<p class="pb-6">My compromise is what I’m calling Edges and Drawbacks:</p>
+
+<ul class="list-outside list-disc pb-6 pl-10">
+<li>The player rolls 2 d20: a normal die and an Edge or Drawback die.</li>
+<li>If the Edge (or Drawback) die result is odd, then the roll is
+discarded and the original die roll is
+used<a href="#fn:3" id="fnref:3" title="see footnote" class="text-sm align-top">3</a>.</li>
+</ul>
+
+<p class="pb-6">Pretty simple. The math seems to bear out well
+too<a href="#fn:4" id="fnref:4" title="see footnote" class="text-sm align-top">4</a>:</p>
+
+<p class="pb-6"><img src="images/edge_and_drawback.png" title="Edge and Drawback Percentages" alt="Edge and Drawback Percentages" id="edge_math" /></p>
+
+<p class="pb-6">It seems to give you the ±2 bonus in the middle of the d20 targets. For
+example, it’s a 50% chance to roll an 11 or higher on a d20. With
+advantage that goes to 75%. And with an Edge, the probability is exactly
+in between, at 62.5%; just a little more than the +2 bonus that would
+increase the probability to 60% (requiring a 9 or higher). On the
+contrary, an Edge gives no difference to Advantage when 20 or 1 is the
+target.</p>
+
+<h2 class="text-2xl md:text-3xl pb-6">Bookkeeping And Cancellations</h2>
+
+<p class="pb-6">Whereas with Advantage, it doesn’t matter which die you roll, an Edge
+does require you to specify which one is the Edge Die so that you know
+which one to discard if it is odd. Simple enough, just declare which one
+it is, much like declaring which d10 is the tens in a percentile roll.</p>
+
+<p class="pb-6">Also, Advantage and Disadvantage cancel each other out regardless of
+quantities. If I have Advantage from 2 situations and Disadvantage from
+another situation, the rules state that no bonus is given. An Edge could
+be used in such a circumstance to still offer some bonus. However, I
+like the simplicity of the cancellation rule. I’m recommending that an
+Edge only be used when it is the only bonus. Likewise, Drawbacks should
+be used only when it is the only negative. Edges or Drawbacks shouldn’t
+cancel Disadvantage or Advantage respectively.</p>
+
+<h2 class="text-2xl md:text-3xl pb-6">And I Would Use This How?</h2>
+
+<p class="pb-6">So where might you use an Edge? In combat I’m sure there are plenty of
+situations that could arise where Advantage would seem too, well,
+advantageous. Perhaps kicking dirt in someone’s face as a free action
+the first time in combat could give an Edge to the next attack? How
+about a skill checking when working together where the second person has
+a high ability score but maybe not proficiency in the skill?</p>
+
+<p class="pb-6">In short, I plan on using it where I want to award a bonus for something
+clever but not outstanding.</p>
+
+<p class="pb-6">As with all rules, this is just another tool in your GM war chest that
+you might be able to use from time to time.</p>
+
+<div class="footnotes">
+<hr />
+<ol class="list-decimal list-inside pt-6">
+
+<li id="fn:1" class="pb-6">When I say Advantage, I also mean its accompanying Disadvantage mechanic. <a href="#fnref:1" title="return to article" class="reversefootnote">&#160;&#8617;</a>
+</li>
+
+<li id="fn:2" class="pb-6">The Online DM gives a good
+<a href="http://onlinedungeonmaster.com/2012/05/24/advantage-and-disadvantage-in-dd-next-the-math/">introduction</a>
+to the math of Advantage. <a href="#fnref:2" title="return to article" class="reversefootnote">&#160;&#8617;</a>
+</li>
+
+<li id="fn:3" class="pb-6">Technically it’s only discarded if the Advantage Die is higher and
+even, since a lower roll wouldn’t be used anyways. <a href="#fnref:3" title="return to article" class="reversefootnote">&#160;&#8617;</a>
+</li>
+
+<li id="fn:4" class="pb-6">It’s entirely possible that I’ve calculated something wrong. If so,
+please correct me. <a href="#fnref:4" title="return to article" class="reversefootnote">&#160;&#8617;</a>
+</li>
+
+</ol>
+</div>
+</div>
+
+<footer class="border-t border-gray-400 shadow">
+  <div class="container w-full md:max-w-3xl mx-auto py-8 bg-gray-100">
+
+      <!-- <div class="container max-w-4xl mx-auto flex py-8"> -->
+      <div class="w-full mx-auto flex flex-wrap">
+          <div class="flex w-full md:w-1/2">
+              <div class="px-8">
+                  <h3 class="font-bold text-blue-800">About</h3>
+                  <p class="py-4 text-blue-600 text-sm">
+                      rpgist (n): 1) one that specializes in the art or science or skill of RPGs, or 2) a
+                      blog about RPGs by @icosahedron<br><br>
+                      Dice designed by Eric C. Harshbarger and used with permission. Dungeon Map by <a
+                          href="https://paratime.ca/cartography/blue_dungeons.html">Tim Hartin</a>.
+                      Some icons made by <a href="https://www.flaticon.com/authors/freepik">freepik</a>.
+                  </p>
+              </div>
+          </div>
+
+          <div class="flex w-full md:w-1/2">
+              <div class="px-8">
+                  <h3 class="font-bold text-blue-800">Social</h3>
+                  <ul class="list-reset items-center text-sm pt-3">
+                      <li>
+                          <a class="flex flex-row inline-block text-blue-600 no-underline hover:text-blue-800 hover:text-underline py-1"
+                              href="mailto:gm@icosahedron.org" target="_blank">
+                              <img src="images/email.svg" class="w-6 h-6 pr-2 pb-1"> Email
+                          </a>
+                      </li>
+                      <li>
+                          <a class="flex flex-row inline-block text-blue-600 no-underline hover:text-blue-800 hover:text-underline py-1"
+                              href="https://twitter.com/icosahedron" target="_blank">
+                              <img src="images/Twitter_Social_Icon_Circle_Color.svg"
+                                  class="w-6 h-6 pr-2 pb-1"> Twitter
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+
+<script>
+  /* Progress bar */
+  // Source: https://alligator.io/js/progress-bar-javascript-css-variables/
+  var h = document.documentElement,
+      b = document.body,
+      st = 'scrollTop',
+      sh = 'scrollHeight',
+      progress = document.querySelector('#progress'),
+      scroll;
+  var scrollpos = window.scrollY;
+  var header = document.getElementById('header');
+  var navcontent = document.getElementById('nav-content');
+
+  document.addEventListener('scroll', function () {
+      /* Refresh scroll % width */
+      scroll = ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100;
+      progress.style.setProperty('--scroll', scroll + '%');
+
+      /* Apply classes for slide in bar */
+      scrollpos = window.scrollY;
+
+      if (scrollpos > 10) {
+          header.classList.add('bg-grey-100');
+          header.classList.add('shadow');
+          // navcontent.classList.remove('bg-gray-100');
+          // navcontent.classList.add('bg-white');
+      } else {
+          // header.classList.remove('bg-white');
+          header.classList.remove('shadow');
+          // navcontent.classList.remove('bg-white');
+          // navcontent.classList.add('bg-gray-100');
+      }
+  });
+
+  // Javascript to toggle the menu
+  document.getElementById('nav-toggle').onclick = function () {
+      document.getElementById('nav-content').classList.toggle('hidden');
+  };
+</script>
+<script>
+  katex.render("\\frac{1}{6} \\approx 17\\%", one_over_six_approx_17_percent);
+  katex.render("\\approx", approx);
+  katex.render("6 \\times 17 = 102", six_times_seventeen_equals_102)
+  katex.render("\\frac{1}{6} = 0.1\\overline{66}", one_sixth_equals_0_1overline66);
+</script>            
+</body>
+
+</html>
