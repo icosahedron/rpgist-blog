@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>The RPGist</title>
+    <meta name="author" content="@icosahedron" />
+    <meta name="description" content="A blog agout RPGs, primarily D&D" />
+    <meta name="keywords" content="rpg, games, dice" />
+    <!--Replace with your tailwind.css once created-->
+    <link href="css/post.css" rel="stylesheet" />
+    <style>
+        body {
+            background: white center url(images/bluemap004.jpg);
+            background-attachment: fixed;
+            margin: 0px 0px 0px 0px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+</head>
+<!-- afcade -- ><!-- b9d3e3 -->
+<!-- 3182ce -->
+<!-- #90cdf4 -->
+
+<body class="bg-gray-100 text-blue-800 font-sans leading-normal tracking-normal">
+    <nav id="header" class="fixed w-full z-10 top-0 bg-gray-100">
+        <div id="progress" class="h-1 z-20 top-0" style="
+          background: linear-gradient(
+            to right,
+            #90cdf4 var(--scroll),
+            transparent 0
+          );
+        "></div>
+
+        <div class="w-full md:max-w-3xl mx-auto flex flex-wrap items-center justify-between mt-0 py-7">
+            <div class="pl-2 lg:pl-4 font-serif font-bold text-blue-800 text-3xl md:text-4xl lg:text-5xl">
+                <span class="flex flex-row">
+                    <a class="no-underline hover:no-underline" href="#">The RPGist</a>
+                    <img src="images/rpgdice.png" class="pl-4 h-8 md:h-10 lg:h-12 mt-1 lg:mt-2" /></span>
+            </div>
+            <!-- <div class="pl-2 lg:pl-10 pt-2"><img src="images/rpgdice.jpeg" class="h-8 lg:h-12" /></div> -->
+            <div class="block pr-6 lg:hidden">
+                <button id="nav-toggle"
+                    class="flex items-center px-3 py-2 border rounded text-blue-500 border-gray-600 hover:text-blue-800 hover:border-teal-500 appearance-none focus:outline-none">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+
+            <div id="nav-content"
+                class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-gray-100 md:bg-transparent z-20">
+                <ul class="list-reset lg:flex justify-end flex-1 items-center list-none">
+                    <li class="mr-3">
+                        <a class="inline-block py-2 px-4 lg:px-2 text-blue-600 font-bold no-underline"
+                            href="archive.html">
+                            Archive
+                        </a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="inline-block text-blue-600 no-underline hover:text-blue-800 hover:text-underline py-2 px-4 lg:px-2"
+                            href="colophon.html">
+                            Colophon
+                        </a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="inline-block text-blue-600 no-underline hover:text-blue-800 hover:text-underline py-2 px-4  lg:px-2"
+                            href="games.html">
+                            Games
+                        </a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="inline-block text-blue-600 no-underline hover:text-blue-800 hover:text-underline py-2 px-4 lg:px-2"
+                            href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <!--Container-->
+    <div class="container w-full md:max-w-3xl mx-auto pt-20 bg-gray-100">
+        <div class="px-4 md:px-6 text-xl text-blue-800 leading-normal font-sans">
+            <!--Title-->
+            <div class="font-sans">
+                <h1 class="font-bold font-sans break-normal text-blue-800 pt-6 pb-2 text-2xl md:text-3xl">
+                    An Alternative Dice System for D&D Next
+                </h1>
+                <p class="text-sm md:text-base font-normal text-blue-600 pb-6">
+                    Published September 2013
+                </p>
+            </div>
+<p class="pb-6"><em>This article previously appeared at the Hobbit-Hole.</em></p>
+
+<p class="pb-6">One of the many things I love about <a href="http://dndnext.com">D&amp;D Next</a> are
+the Skill Dice and Expertise Dice (I much prefer this name to Martial
+Damage Dice). They give the game extra tactical and tactile dimensions.
+That actions involve more dice rolling is a great direction for the
+game.</p>
+
+<p class="pb-6">The basis for action resolution (DC, AC) is still the venerable d20 +
+static bonus. Inveterate tinkerer that I am, I couldn&#8217;t help but imagine
+what other dice systems could be used and what their effect might be.</p>
+
+<h2 class="text-2xl md:text-3xl pb-6">Chris Sims&#8217; 3d6</h2>
+
+<p class="pb-6">Chris Sims, one of the 4e designers, posted in a blog entry that his
+group uses 3d6 rather than a d20 during combat. (Sadly that blog entry
+on Loremaster.org is no longer available due to a crash.)</p>
+
+<p class="pb-6">3d6 generates numbers on a bell curve. All other bonuses being equal,
+the net effect is to increase the hit rate from about 60% to 75%. This
+makes combat go faster and players got to use their cool powers more
+often.</p>
+
+<p class="pb-6">What about the natural 20 critical? Well, Mr. Sims simply calculated
+that since natural 20 is a 5% probability, 16+ on 3d6 is also about 5%,
+so any roll of 16+ was a critical.</p>
+
+<p class="pb-6">The substitution is easy and straightforward. All other rolls continue
+to use d20.</p>
+
+<h2 class="text-2xl md:text-3xl pb-6">Dice Pool for D&amp;D?</h2>
+
+<p class="pb-6">Our antics with dice don&#8217;t have to end there though. What about the
+other checks? Can we make those more exciting than a simple d20 +
+modifier?</p>
+
+<p class="pb-6">Since we love to roll dice, let&#8217;s use a dice pool. The more effective
+you are with a skill or weapon, the more dice you roll.</p>
+
+<p class="pb-6">An ideal change would have to be roughly the same probability. We don&#8217;t
+want to send things too far off the beaten track. If at all possible, we
+want to keep all other factors (i.e., DC, AC, HP, etc.) the same, or at
+the very least easily adjustable to compensate.</p>
+
+<h3 class="text-xl md:text-2xl pb-6">Base Dice</h3>
+
+<p class="pb-6">Just as with Mr. Sims, we will replace the d20 with 3d6. This gives us a
+good approximation of the d20 range but focuses the numbers on 9&#8211;12.
+This will make medium DCs easier to achieve, whereas higher DCs will be
+more difficult.</p>
+
+<h3 class="text-xl md:text-2xl pb-6">Bonus Dice</h3>
+
+<p class="pb-6">Normally a static bonus concocted from ability score, level, skills,
+etc. is added to find the total result. Since we are forming a dice
+pool, let&#8217;s replace the static bonus with dice!</p>
+
+<p class="pb-6">The list below shows each static bonus and the bonus die roll to
+substitute. Each is linked to a chart on
+<a href="http://anydice.com" title="Dice Probability Calculator">anydice.com</a> that
+shows the probabilities of the dice pool roll to be compared to the
+static bonus roll. I&#8217;ve only included through +10; hopefully the
+progression should be evident for higher bonuses.</p>
+
+<ul class="list-disc list-inside pt-6 pb-6">
+<li><a href="http://anydice.com/program/ec7/at_least" class="text-blue-600 no-underline hover:text-blue-800 hover:text-underline">+1</a> -
+<a href="http://anydice.com/program/1f1f/at_least" class="text-blue-600 no-underline hover:text-blue-800 hover:text-underline">d4</a></li>
+<li><a href="http://anydice.com/program/17ec/at_least" class="text-blue-600 no-underline hover:text-blue-800 hover:text-underline">+2</a> -
+<a href="http://anydice.com/program/1f20/at_least" class="text-blue-600 no-underline hover:text-blue-800 hover:text-underline">d6</a></li>
+<li><a href="http://anydice.com/program/1d9d/at_least" class="text-blue-600 no-underline hover:text-blue-800 hover:text-underline">+3</a> -
+<a href="http://anydice.com/program/1f22/at_least" class="text-blue-600 no-underline hover:text-blue-800 hover:text-underline">d8</a></li>
+<li><a href="http://anydice.com/program/1d9c/at_least" class="text-blue-600 no-underline hover:text-blue-800 hover:text-underline">+4</a> -
+<a href="http://anydice.com/program/100c/at_least" class="text-blue-600 no-underline hover:text-blue-800 hover:text-underline">2d4</a></li>
+<li><a href="http://anydice.com/program/1f27/at_least" class="text-blue-600 no-underline hover:text-blue-800 hover:text-underline">+5</a> -
+<a href="http://anydice.com/program/1c99/at_least" class="text-blue-600 no-underline hover:text-blue-800 hover:text-underline">d10</a></li>
+<li><a href="http://anydice.com/program/1f28/at_least" class="text-blue-600 no-underline hover:text-blue-800 hover:text-underline">+6</a> -
+<a href="http://anydice.com/program/1f23/at_least" class="text-blue-600 no-underline hover:text-blue-800 hover:text-underline">d12</a></li>
+<li><a href="http://anydice.com/program/190c/at_least" class="text-blue-600 no-underline hover:text-blue-800 hover:text-underline">+7</a> -
+<a href="http://anydice.com/program/1f24/at_least" class="text-blue-600 no-underline hover:text-blue-800 hover:text-underline">2d6</a></li>
+<li><a href="http://anydice.com/program/1f29/at_least" class="text-blue-600 no-underline hover:text-blue-800 hover:text-underline">+8</a> -
+<a href="http://anydice.com/program/1f25/at_least" class="text-blue-600 no-underline hover:text-blue-800 hover:text-underline">3d4</a></li>
+<li><a href="http://anydice.com/program/1f1e/at_least" class="text-blue-600 no-underline hover:text-blue-800 hover:text-underline">+9</a> -
+<a href="http://anydice.com/program/835/at_least" class="text-blue-600 no-underline hover:text-blue-800 hover:text-underline">2d8</a></li>
+<li><a href="http://anydice.com/program/1f2a/at_least" class="text-blue-600 no-underline hover:text-blue-800 hover:text-underline">+10</a> -
+<a href="http://anydice.com/program/1f26/at_least" class="text-blue-600 no-underline hover:text-blue-800 hover:text-underline">3d6</a></li>
+</ul>
+
+<p class="pb-6">To determine which bonus dice to use, I compared what number would be
+rolled at least 50% of the time on a d20 roll and approximated the same
+percentage equivalent for the dice pool roll. In most cases, the numbers
+that would be rolled 50% of the time were +1 to +2 higher than the
+d20+bonus roll (e.g., on a d20+1, 12 or higher will be rolled 50% of the
+time; for 3d6+d4, 13.5 or higher will be rolled 50% of the time).</p>
+
+<p class="pb-6">These are fairly straight forward substitutions and maintain roughly
+equal probability distributions. If you are truly concerned about
+maintaining parity, you could simply add +2 to all DC/AC rolls and be
+close enough for government work. I prefer allowing my players to
+succeed a little more often. (Remember, monsters will succeed more often
+too.)</p>
+
+<p class="pb-6">Since the goal was to keep the probabilities roughly equal, the
+progression stutters since it doesn&#8217;t map perfectly. In some cases I
+opted to increase the minimum roll rather than the maximum by using a
+higher combination of smaller die, such as +3 = d8, +4 = 2d4.</p>
+
+<h3 class="text-xl md:text-2xl pb-6">Exploding Die</h3>
+
+<p class="pb-6">In a normal check, a 20 is a thrilling result and usually elicits
+cheers. Depending on how many dice you roll in a given session, a 20
+probably happens once every session or two. Since we are rolling dice on
+a bell curve, the maximum results occur far less often (an 18 on 3d6
+occurs ~0.5% of the time). What if we could add something that would
+generate the same excitement to our dice pool? Ladies and gentlemen, I
+give you the exploding die<a href="#fn:1" id="fnref:1" title="see footnote" class="text-sm align-top">1</a>.</p>
+
+<p class="pb-6">For those who aren&#8217;t familiar with the term, an exploding die is one
+that is rolled again and added to the result, usually when its maximum
+value is shown. For example, if an exploding d6 rolls a 6, it is rolled
+again and the second roll is added to the original 6. If the second roll
+is also a 6, the die is rolled again, ad infinitum.</p>
+
+<p class="pb-6">In our playtest, a single exploding d6 from the base 3d6 seems to work
+best. We use a different color die to eliminate confusion about which
+die is exploding. The same drama is generated often enough, and we
+sometimes see spectacular results. In a tense moment last week, our
+wizard was being attacked by a gargoyle and used Shocking Grasp as a
+last ditch effort; he rolled a 6, 6, 6, 1 with the exploding die for a
+total of 35 on his check. Cheers around the table.</p>
+
+<p class="pb-6">The difference in probabilities is negligible with the exploding die.
+Taking the charts above, let&#8217;s examine the +5 roll and see how that
+compares:</p>
+
+<ul class="pl-2 pb-6 ">
+<li><a href="http://anydice.com/program/1c99/at_least" class="text-blue-600 no-underline hover:text-blue-800 hover:text-underline">3d6+d10</a> -
+<a href="http://anydice.com/program/200e/at_least" class="text-blue-600 no-underline hover:text-blue-800 hover:text-underline">3d6
+exploding + d10</a></li>
+</ul>
+
+<p class="pb-6">We can see that the probabilities go up slightly for each number. The
+increase for rolling a 10 is 0.4%; rolling an 18 is 4% more likely (less
+than a pip on a d20).</p>
+
+<h3 class="text-xl md:text-2xl pb-6">Criticals and Fumbles</h3>
+
+<p class="pb-6">As with the rest of this mechanic, keeping the frequency of criticals
+and fumbles is a goal. Since these happen 5% of the time on a d20,
+that&#8217;s our metric. Also, since the static bonuses aren&#8217;t taken into a
+account, neither is the bonus die; only the base 3d6 are used.</p>
+
+<p class="pb-6">Using 3d6 with an exploding die, a <a href="http://anydice.com/program/200f/at_least">19+ occurs about 5% of the
+time</a>. Since we are using an
+exploding die though, more dramatic totals are possible. We can use that
+to create some more dramatic effects: when the exploding die rolls a 6
+more than once, damage is increased an additional multiple. For example,
+in the wizard&#8217;s roll above, the two extra rolls of 6 resulted in a 3x
+max damage multiplier.</p>
+
+<p class="pb-6">Fumble probabilities are handled similarly. Since 6 or lower happens 5%
+of the time, any roll of 6 or lower on the base 3d6 is an automatic
+failure. While lower numbers could produce catastrophic failures, it&#8217;s
+not really feasible to create super negative rolls; a failure is a
+failure. You could use a fumble table, but I don&#8217;t.</p>
+
+<h3 class="text-xl md:text-2xl pb-6">Negative Modifiers</h3>
+
+<p class="pb-6">Just subtract the modifier from the 3d6 roll. Don&#8217;t roll the bonus die.</p>
+
+<h3 class="text-xl md:text-2xl pb-6">Advantage and Disadvantage</h3>
+
+<p class="pb-6">Just re-roll the entire roll.</p>
+
+<h2 class="text-2xl md:text-3xl pb-6">Playtest</h2>
+
+<p class="pb-6">We&#8217;ve used this system for a few weeks, and it seems to work well. Most
+of our players enjoy it. Some don&#8217;t like it as much. Those who haven&#8217;t
+enjoyed it use the standard dice rule; we haven&#8217;t noticed a particular
+disparity in success for one system or the other. The DM is using it and
+likes it. He just jots the bonus dice down next to the monster/NPC
+attacks.</p>
+
+<h2 class="text-2xl md:text-3xl pb-6">More Polyhedral Fun Next Time</h2>
+
+<p class="pb-6">There is more that can be done, but my word count <s>is fast
+approaching</s> has surpassed my self-imposed limit, so I will wait for
+my next article to address more thoughts on this subject. As a hint,
+think Warhammer FRP 3e.</p>
+
+<p class="pb-6">What do you think? In particular, I would appreciate a more rigorous
+analysis; if it&#8217;s busted I would like to know about it. Contact me via
+e-mail or Twitter (@icosahedron)</p>
+
+<div class="footnotes">
+<hr />
+<ol class="list-decimal list-inside pt-6 pb-6">
+
+<li id="fn:1">Well, I didn’t invent the exploding die concept, so I can’t give it
+to you. Lots of systems use exploding dice, perhaps most notably
+Savage Worlds. <a href="#fnref:1" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+</div>
+
+<footer class="border-t border-gray-400 shadow">
+  <div class="container w-full md:max-w-3xl mx-auto py-8 bg-gray-100">
+
+      <!-- <div class="container max-w-4xl mx-auto flex py-8"> -->
+      <div class="w-full mx-auto flex flex-wrap">
+          <div class="flex w-full md:w-1/2">
+              <div class="px-8">
+                  <h3 class="font-bold text-blue-800">About</h3>
+                  <p class="py-4 text-blue-600 text-sm">
+                      rpgist (n): 1) one that specializes in the art or science or skill of RPGs, or 2) a
+                      blog about RPGs by @icosahedron<br><br>
+                      Dice designed by Eric C. Harshbarger and used with permission. Dungeon Map by <a
+                      class="text-blue-600 no-underline hover:text-blue-800 hover:text-underline"
+                      href="https://paratime.ca/cartography/blue_dungeons.html">Tim Hartin</a>.
+                      Some icons made by <a href="https://www.flaticon.com/authors/freepik" class="text-blue-600 no-underline hover:text-blue-800 hover:text-underline">freepik</a>.
+                  </p>
+              </div>
+          </div>
+
+          <div class="flex w-full md:w-1/2">
+              <div class="px-8">
+                  <h3 class="font-bold text-blue-800">Social</h3>
+                  <ul class="list-reset items-center text-sm pt-3">
+                      <li>
+                          <a class="flex flex-row inline-block text-blue-600 no-underline hover:text-blue-800 hover:text-underline py-1"
+                              href="mailto:gm@icosahedron.org" target="_blank">
+                              <img src="images/email.svg" class="w-6 h-6 pr-2 pb-1"> Email
+                          </a>
+                      </li>
+                      <li>
+                          <a class="flex flex-row inline-block text-blue-600 no-underline hover:text-blue-800 hover:text-underline py-1"
+                              href="https://twitter.com/icosahedron" target="_blank">
+                              <img src="images/Twitter_Social_Icon_Circle_Color.svg"
+                                  class="w-6 h-6 pr-2 pb-1"> Twitter
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+
+<script>
+  /* Progress bar */
+  // Source: https://alligator.io/js/progress-bar-javascript-css-variables/
+  var h = document.documentElement,
+      b = document.body,
+      st = 'scrollTop',
+      sh = 'scrollHeight',
+      progress = document.querySelector('#progress'),
+      scroll;
+  var scrollpos = window.scrollY;
+  var header = document.getElementById('header');
+  var navcontent = document.getElementById('nav-content');
+
+  document.addEventListener('scroll', function () {
+      /* Refresh scroll % width */
+      scroll = ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100;
+      progress.style.setProperty('--scroll', scroll + '%');
+
+      /* Apply classes for slide in bar */
+      scrollpos = window.scrollY;
+
+      if (scrollpos > 10) {
+          header.classList.add('bg-grey-100');
+          header.classList.add('shadow');
+          // navcontent.classList.remove('bg-gray-100');
+          // navcontent.classList.add('bg-white');
+      } else {
+          // header.classList.remove('bg-white');
+          header.classList.remove('shadow');
+          // navcontent.classList.remove('bg-white');
+          // navcontent.classList.add('bg-gray-100');
+      }
+  });
+
+  // Javascript to toggle the menu
+  document.getElementById('nav-toggle').onclick = function () {
+      document.getElementById('nav-content').classList.toggle('hidden');
+  };
+</script>
+<script>
+  katex.render("\\frac{1}{6} \\approx 17\\%", one_over_six_approx_17_percent);
+  katex.render("\\approx", approx);
+  katex.render("6 \\times 17 = 102", six_times_seventeen_equals_102)
+  katex.render("\\frac{1}{6} = 0.1\\overline{66}", one_sixth_equals_0_1overline66);
+</script>            
+</body>
+
+</html>

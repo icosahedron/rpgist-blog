@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>The RPGist</title>
+    <meta name="author" content="@icosahedron" />
+    <meta name="description" content="A blog agout RPGs, primarily D&D" />
+    <meta name="keywords" content="rpg, games, dice" />
+    <!--Replace with your tailwind.css once created-->
+    <link href="css/post.css" rel="stylesheet" />
+    <style>
+        body {
+            background: white center url(images/bluemap004.jpg);
+            background-attachment: fixed;
+            margin: 0px 0px 0px 0px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+</head>
+<!-- afcade -- ><!-- b9d3e3 -->
+<!-- 3182ce -->
+<!-- #90cdf4 -->
+
+<body class="bg-gray-100 text-blue-800 font-sans leading-normal tracking-normal">
+    <nav id="header" class="fixed w-full z-10 top-0 bg-gray-100">
+        <div id="progress" class="h-1 z-20 top-0" style="
+          background: linear-gradient(
+            to right,
+            #90cdf4 var(--scroll),
+            transparent 0
+          );
+        "></div>
+
+        <div class="w-full md:max-w-3xl mx-auto flex flex-wrap items-center justify-between mt-0 py-7">
+            <div class="pl-2 lg:pl-4 font-serif font-bold text-blue-800 text-3xl md:text-4xl lg:text-5xl">
+                <span class="flex flex-row">
+                    <a class="no-underline hover:no-underline" href="index.html">The RPGist</a>
+                    <img src="images/rpgdice.png" class="pl-4 h-8 md:h-10 lg:h-12 mt-1 lg:mt-2" /></span>
+            </div>
+            <div class="block pr-6 lg:hidden">
+                <button id="nav-toggle"
+                    class="flex items-center px-3 py-2 border rounded text-blue-500 border-gray-600 hover:text-blue-800 hover:border-teal-500 appearance-none focus:outline-none">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+
+            <div id="nav-content"
+                class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-gray-100 md:bg-transparent z-20">
+                <ul class="list-reset lg:flex justify-end flex-1 items-center list-none">
+                    <li class="mr-3">
+                        <a class="inline-block py-2 px-4 lg:px-2 text-blue-600 font-bold no-underline"
+                            href="archive.html">
+                            Archive
+                        </a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="inline-block text-blue-600 no-underline hover:text-blue-800 hover:text-underline py-2 px-4 lg:px-2"
+                            href="colophon.html">
+                            Colophon
+                        </a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="inline-block text-blue-600 no-underline hover:text-blue-800 hover:text-underline py-2 px-4  lg:px-2"
+                            href="games.html">
+                            Games
+                        </a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="inline-block text-blue-600 no-underline hover:text-blue-800 hover:text-underline py-2 px-4 lg:px-2"
+                            href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <!--Container-->
+    <div class="container w-full md:max-w-3xl mx-auto pt-20 bg-gray-100">
+        <div class="px-4 md:px-6 text-xl text-blue-800 leading-normal font-sans">
+            <!--Title-->
+            <div class="font-sans">
+                <h1 class="font-bold font-sans break-normal text-blue-800 pt-6 pb-2 text-3xl md:text-4xl">
+                    Probability for Game Designers
+                </h1>
+                <p class="text-sm md:text-base font-normal text-blue-600 pb-6">
+                    Published 12 December 2020
+                </p>
+            </div>
+
+            <p class="pb-6">Specifically, myself as an aspiring table-top game designer.</p>
+            <p class="pb-6">In addition to game design, probability is useful lots of other places, but learning it via game
+                design seems like fun, so I thought I would try it.</p>
+            <h2 class="text-2xl md:text-3xl pb-6">D&amp;D (Dice &amp; Diagrams)</h2>
+            <p class="pb-6">Almost everything will be presented as examples with dice or other pieces of chance, such as coins or
+                cards.</p>
+            <p class="pb-6">Not a lot math will be used, though one goal I have is to learn the math well enough to sort through
+                the books and videos on probability, so I will likely show how some facets of probability from our
+                game design perspective is expressed as math.</p>
+            <h2 class="text-2xl md:text-3xl pb-6">Any Dice</h2>
+            <p class="pb-6">Any Dice will be used to illustrate some of the concepts. It’s a great tool, so I aim to use it to
+                express as much as possible. I hope that you will use it too.</p>
+            <h2 class="text-2xl md:text-3xl pb-6">Percentages</h2>
+            <p class="pb-6">Most people I believe understand percentages, at least figuratively. For my purposes, they will serve
+                as the baseline for comparison.</p>
+            <p class="pb-6">For example, say I’m designing a success mechanic for an RPG, one of the first questions I might ask
+                myself is “How would this work so that a competent character would succeed 75% of the time?”</p>
+            <h3 class="text-xl md:text-2xl pb-6">Example of Percentage Use</h3>
+            <p class="pb-6">GM Tanis is thinking of his game, and wants to make some challenges for his party in an upcoming
+                adventure. He has a rough idea of how difficult he wants these challenges to be, but doesn’t know
+                how to determine what the difficulty rating should be in his game.</p>
+            <p class="pb-6">He starts with a knowledge of his PCs and decides to make the challenge hard, so he opts for a 30%
+                success chance. He will use what we learn in this series to determine what the mechanic expression
+                should be.</p>
+            <h2 class="text-2xl md:text-3xl pb-6">Code</h2>
+            <p class="pb-6">Simple code snippets from time to time, though this isn’t really meant to be the focus of the series.
+                Most likely we will use <code>Python</code>, as that seems to be a language that translates from
+                English well.</p>
+            <h2 class="text-2xl md:text-3xl pb-6">Distributions</h2>
+            <p class="pb-6">One of the key questions I have, and I think most game designers should have, is how often should
+                something succeed based on the mechanic used or character attribute.</p>
+            <p class="pb-6">This can be modeled as a “distribution”, which is largely a way of dividing results up into
+                categories that might be different sizes. Distributions are usually modeled visually with a diagram
+                called a histogram that gives a “shape”.</p>
+            <h2 class="text-2xl md:text-3xl pb-6">A Single Fair Die</h2>
+            <p class="pb-6">To start off, let’s consider something that most of us intuitively know, a single die roll.</p>
+            <p class="pb-6">The number of sides is relatively immaterial for this discussion, but let’s assume a twenty-sided die
+                (d20), a common die used in RPGs.</p>
+            <p class="pb-6">Rolling this die means that any individual number should come up <em>on average</em> 1 time per 20
+                rolls. (On average is important and will be explained later.)</p>
+            <p class="pb-6">Hopefully this just “makes sense” to you.</p>
+            <h2 class="text-2xl md:text-3xl pb-6">Percentage per Face</h2>
+            <p class="pb-6">Again, hopefully this is intuitive, but just to explain it, to know how often a number comes up, we
+                convert its chances to a percentage. When a dice has <span class="math inline">n</span> faces, we
+                say that it has a <em>1 in <span class="math inline">n</span></em> chance of occurring. This is
+                expressed as a fraction, <span class="math inline">\frac{1}{n}</span>. To get the percentage, we
+                compute the decimal representation of this fraction, so <span class="math inline">\frac{1}{20} = .05
+                    = 5\%</span>.</p>
+            <p class="pb-6">For a six-sided die (d6), each number has a 1 in 6 chance of showing face up on each roll, so the
+                percentage chance for each number is <span id="one_over_six_approx_17_percent">\\frac{1}{6} \\approx
+                    17\\%</span> (the <span id="approx">\\approx</span> means approximately, though I imagine you
+                already know this; <span id="six_times_seventeen_equals_102">6 \\times 17 = 102</span>, just a
+                little more than 100. Converting <span id="one_sixth_equals_0_1overline66">\\frac{1}{6} =
+                    0.1\\overline{66}</span>, but we will convert this to our nearest whole number).</p>
+            <h3 class="text-xl md:text-2xl pb-6">GM Tanis Example</h3>
+            <p class="pb-6">GM Tanis is playing D&amp;D, and wants to make his players go a certian route, but doesn’t want to
+                make it seem like he’s railroading them, so he places a door in their path, but one that’s
+                exceedingly hard to pass. The only way to get past it in his estimation is to roll a 20. So he looks
+                at the sheets of the PCs and sees that PC Garrett has an Athletics bonus of +7, so that means that
+                the DC to open the door should be 27.</p>
+            <p class="pb-6">(Whether or not this is the correct way to establish challenges is beyond the scope of this article.)
+            </p>
+            <h2 class="text-2xl md:text-3xl pb-6">Distribution</h2>
+            <p class="pb-6">The distribution, or shape of a single die is uniform. You can imagine what that means, or you can
+                look at the handy illustration I copied from <a href="https://anydice.com/program/2f">anydice</a>.
+            </p>
+            <p class="pb-6"><img src="images/uniform-distribution.png" alt="uniform-distribution"
+                    style="height:50%; width:50%; display:block; margin-left:auto; margin-right: auto;" /></p>
+            <p class="pb-6">Each number has an even chance of coming up, so the chance is uniformly distributed, making thus the
+                distribution uniform. 👨‍🏫</p>
+            <h2 class="text-2xl md:text-3xl pb-6">Let’s Roll</h2>
+            <p class="pb-6">Next up for me to learn is 2 dice rolls and how those can be combined. 🎲 🎲</p>
+        </div>
+        <!--Tags -->
+        <!-- <div class="text-base md:text-sm text-blue-500 px-4 py-6">
+        Tags:
+        <a
+          href="#"
+          class="text-base md:text-sm text-teal-500 no-underline hover:underline"
+        >
+          Link
+        </a>
+        .
+        <a
+          href="#"
+          class="text-base md:text-sm text-teal-500 no-underline hover:underline"
+        >
+          Link
+        </a>
+      </div> -->
+
+        <!--Divider-->
+        <!-- <hr class="border-b-2 border-gray-400 mb-8 mx-4" /> -->
+
+        <!--Next & Prev Links-->
+        <!-- <div class="font-sans flex justify-between content-center px-4 pb-12">
+        <div class="text-left">
+          <span class="text-xs md:text-sm font-normal text-blue-600"
+            >&lt; Previous Post</span
+          ><br />
+          <p>
+            <a
+              href="#"
+              class="break-normal text-base md:text-sm text-teal-500 font-bold no-underline hover:underline"
+            >
+              Blog title
+            </a>
+          </p>
+        </div>
+        <div class="text-right">
+          <span class="text-xs md:text-sm font-normal text-blue-600">
+            Next Post &gt;
+          </span>
+          <br />
+          <p>
+            <a
+              href="#"
+              class="break-normal text-base md:text-sm text-teal-500 font-bold no-underline hover:underline"
+            >
+              Blog title
+            </a>
+          </p>
+        </div>
+      </div> 
+
+    </div> -->
+        <!--/container-->
+
+        <footer class="border-t border-gray-400 shadow">
+            <div class="container w-full md:max-w-3xl mx-auto py-8 bg-gray-100">
+
+                <!-- <div class="container max-w-4xl mx-auto flex py-8"> -->
+                <div class="w-full mx-auto flex flex-wrap">
+                    <div class="flex w-full md:w-1/2">
+                        <div class="px-8">
+                            <h3 class="font-bold text-blue-800">About</h3>
+                            <p class="py-4 text-blue-600 text-sm">
+                                rpgist (n): 1) one that specializes in the art or science or skill of RPGs, or 2) a
+                                blog about RPGs by @icosahedron<br><br>
+                                Dice designed by Eric C. Harshbarger and used with permission. Dungeon Map by <a
+                                    href="https://paratime.ca/cartography/blue_dungeons.html">Tim Hartin</a>.
+                                Some icons made by <a href="https://www.flaticon.com/authors/freepik" class="text-blue-600 no-underline hover:text-blue-800 hover:text-underline">freepik</a>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex w-full md:w-1/2">
+                        <div class="px-8">
+                            <h3 class="font-bold text-blue-800">Social</h3>
+                            <ul class="list-reset items-center text-sm pt-3">
+                                <li>
+                                    <a class="flex flex-row inline-block text-blue-600 no-underline hover:text-blue-800 hover:text-underline py-1"
+                                        href="mailto:gm@icosahedron.org" target="_blank">
+                                        <img src="images/email.svg" class="w-6 h-6 pr-2 pb-1"> Email
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="flex flex-row inline-block text-blue-600 no-underline hover:text-blue-800 hover:text-underline py-1"
+                                        href="https://twitter.com/icosahedron" target="_blank">
+                                        <img src="images/Twitter_Social_Icon_Circle_Color.svg"
+                                            class="w-6 h-6 pr-2 pb-1"> Twitter
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            /* Progress bar */
+            // Source: https://alligator.io/js/progress-bar-javascript-css-variables/
+            var h = document.documentElement,
+                b = document.body,
+                st = 'scrollTop',
+                sh = 'scrollHeight',
+                progress = document.querySelector('#progress'),
+                scroll;
+            var scrollpos = window.scrollY;
+            var header = document.getElementById('header');
+            var navcontent = document.getElementById('nav-content');
+
+            document.addEventListener('scroll', function () {
+                /* Refresh scroll % width */
+                scroll = ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100;
+                progress.style.setProperty('--scroll', scroll + '%');
+
+                /* Apply classes for slide in bar */
+                scrollpos = window.scrollY;
+
+                if (scrollpos > 10) {
+                    header.classList.add('bg-grey-100');
+                    header.classList.add('shadow');
+                    // navcontent.classList.remove('bg-gray-100');
+                    // navcontent.classList.add('bg-white');
+                } else {
+                    // header.classList.remove('bg-white');
+                    header.classList.remove('shadow');
+                    // navcontent.classList.remove('bg-white');
+                    // navcontent.classList.add('bg-gray-100');
+                }
+            });
+
+            // Javascript to toggle the menu
+            document.getElementById('nav-toggle').onclick = function () {
+                document.getElementById('nav-content').classList.toggle('hidden');
+            };
+        </script>
+        <script>
+            katex.render("\\frac{1}{6} \\approx 17\\%", one_over_six_approx_17_percent);
+            katex.render("\\approx", approx);
+            katex.render("6 \\times 17 = 102", six_times_seventeen_equals_102)
+            katex.render("\\frac{1}{6} = 0.1\\overline{66}", one_sixth_equals_0_1overline66);
+        </script>            
+</body>
+
+</html>

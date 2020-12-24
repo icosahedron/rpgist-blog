@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>The RPGist</title>
+    <meta name="author" content="@icosahedron" />
+    <meta name="description" content="A blog agout RPGs, primarily D&D" />
+    <meta name="keywords" content="rpg, games, dice" />
+    <!--Replace with your tailwind.css once created-->
+    <link href="css/post.css" rel="stylesheet" />
+    <style>
+      body {
+        background: white center url(images/bluemap004.jpg);
+        background-attachment: fixed;
+        margin: 0px 0px 0px 0px;
+      }
+    </style>
+  </head>
+ <!-- afcade -- ><!-- b9d3e3 --><!-- 3182ce --><!-- #90cdf4 -->
+  <body class="bg-gray-100 text-blue-800 font-sans leading-normal tracking-normal">
+    <nav id="header" class="fixed w-full z-10 top-0 bg-gray-100">
+      <div
+        id="progress"
+        class="h-1 z-20 top-0"
+        style="
+          background: linear-gradient(
+            to right,
+            #90cdf4 var(--scroll),
+            transparent 0
+          );
+        "
+      ></div>
+
+      <div class="w-full md:max-w-3xl mx-auto flex flex-wrap items-center justify-between mt-0 py-7">
+        <div class="pl-2 lg:pl-4 font-serif font-bold text-blue-800 text-3xl md:text-4xl lg:text-5xl">
+          <!-- <a
+            class="font-serif font-bold text-blue-800 text-3xl md:text-4xl lg:text-5xl no-underline hover:no-underline" href="#">The RPGist</a>
+            <span class="pl-2 lg:pl-10 align-bottom"><img src="images/rpgdice.jpeg" class="h-8 md:h-10 lg:h-12" /></span> -->
+          <span class="flex flex-row">
+            <a class="no-underline hover:no-underline" href="index.html">The RPGist</a>
+            <img src="images/rpgdice.png" class="pl-4 h-8 md:h-10 lg:h-12 mt-1 lg:mt-2" /></span>
+        </div>
+        <!-- <div class="pl-2 lg:pl-10 pt-2"><img src="images/rpgdice.jpeg" class="h-8 lg:h-12" /></div> -->
+        <div class="block pr-6 lg:hidden">
+          <button
+            id="nav-toggle"
+            class="flex items-center px-3 py-2 border rounded text-blue-500 border-gray-600 hover:text-blue-800 hover:border-teal-500 appearance-none focus:outline-none">
+            <svg
+              class="fill-current h-3 w-3"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
+        </div>
+
+        <div
+          id="nav-content"
+          class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-gray-100 md:bg-transparent z-20"
+        >
+          <ul class="list-reset lg:flex justify-end flex-1 items-center list-none">
+            <li class="mr-3">
+              <a
+                class="inline-block py-2 px-4 lg:px-2 text-blue-600 font-bold no-underline"
+                href="archive.html">
+                Archive
+              </a>
+            </li>
+            <li class="mr-3">
+              <a
+                class="inline-block text-blue-600 no-underline hover:text-blue-800 hover:text-underline py-2 px-4 lg:px-2"
+                href="colophon.html">
+                Colophon
+              </a>
+            </li>
+            <li class="mr-3">
+              <a
+                class="inline-block text-blue-800 no-underline hover:text-blue-800 hover:text-underline py-2 px-4  lg:px-2"
+                href="games.html">
+                Games
+              </a>
+            </li>
+            <li class="mr-3">
+              <a
+                class="inline-block text-blue-600 no-underline hover:text-blue-800 hover:text-underline py-2 px-4 lg:px-2"
+                href="contact.html">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </nav>
+
+    <!--Container-->
+    <div class="container w-full md:max-w-3xl mx-auto pt-20 bg-gray-100">
+      <div
+        class="px-4 md:px-6 text-xl text-blue-800 leading-normal font-sans"
+      >
+        <!--Title-->
+        <div class="font-sans">
+          <h1 class="font-bold font-sans break-normal text-blue-800 pt-6 pb-2 text-3xl md:text-4xl">
+            Games
+          </h1>
+          <p class="text-sm md:text-base font-normal text-blue-600 pb-6">
+            Published 07 December 2020
+          </p>
+        </div>
+
+        <!--Post Content-->
+        <p class="pb-6">A list of tabletop games that I own or have played.</p>
+
+        <p class="pb-6">I’m not writing this as a brag sheet. Honestly, I’m not sure why I’m
+        writing it, other than since this is a gaming blog, the list of games
+        I’ve played seems noteworthy. I’m sure many people have bigger
+        collections than this one.</p>
+        
+        <h2 class="text-2xl md:text-3xl pb-6">RPG</h2>
+        
+        <ul class="pl-10 list-disc pb-6">
+          <li>Basic D&amp;D (Blue Box)</li>
+          <li>D&amp;D 1e</li>
+          <li>D&amp;D 3e</li>
+          <li>D&amp;D 3.5</li>
+          <li>D&amp;D 4e</li>
+          <li>D&amp;D 5e</li>
+          <li>Pathfinder
+            <ul class="pl-10 list-disc">
+              <li>Lorefinder</li>
+            </ul>
+          </li>
+          <li>Savage Worlds</li>
+          <li>Traveller 1e</li>
+          <li>Rifts</li>
+          <li>Cosmic Patrol</li>
+          <li>Champions 3e</li>
+          <li>James Bond (Victory Games)</li>
+          <li>Shadowrun 2e</li>
+          <li>Rolemaster 2e/3e</li>
+          <li>Runequest 2e (Glorantha)</li>
+          <li>WFRP 1e/3e: missed out on 2e</li>
+          <li>Fate Accelerated</li>
+          <li>Dungeonworld</li>
+          <li>Mage: The Awakening</li>
+          <li>Godsfall</li>
+          <li>Sixcess</li>
+          <li>Narrative Game System</li>
+          <li>Trail of Cthulhu</li>
+          <li>Nights Black Agents</li>
+          <li>Shadow of the Demon Lord</li>
+          <li>Dungeon Crawl Classics</li>
+          <li>Numenera</li>
+          <li>The Strange</li>
+        </ul>
+        
+        <h3 class="text-xl md:text-2xl pb-6">RPGs I’d Like To Play</h3>
+        
+        <ul class="pl-10 list-disc pb-6">
+          <li>Spirit of the Century</li>
+          <li>Hollow Earth Expedition</li>
+          <li>Mutants and Masterminds</li>
+          <li>Legend: I guess I have played this since it is a RuneQuest knock off</li>
+          <li>Marvel Superhero RPG</li>
+        </ul>
+        
+        <h2 class="text-2xl md:text-3xl pb-6">Wargames</h2>
+        
+        <ul class="pl-10 list-disc pb-6">
+          <li>OGRE</li>
+          <li>Car Wars</li>
+          <li>Star Fleet Battles</li>
+          <li>Call to Arms: Star Fleet</li>
+          <li>Battletech</li>
+          <li>Mobile Frame Zero</li>
+        </ul>
+        
+        <p class="pb-6">Strangely, I’ve never played Warhammer Battle as a wargame.</p>
+        
+        <h2 class="text-2xl md:text-3xl pb-6">Board &amp; Card</h2>
+        
+        <p class="pb-6">I omit here the more common games that most children have played.</p>
+        
+        <ul class="pl-10 list-disc pb-6">
+          <li>Settlers of Catan
+            <ul class="pl-10 list-disc">
+              <li>Seafarers of Catan</li>
+            </ul>
+          </li>
+          <li>Lords of Waterdeep
+            <ul class="pl-10 list-disc">
+              <li>Scoundrels of Skullport</li>
+            </ul>
+          </li>
+          <li>Talisman 2e</li>
+          <li>7 Wonders
+            <ul class="pl-10 list-disc">
+              <li>Leaders</li>
+              <li>Cities</li>
+            </ul>
+          </li>
+          <li>Ticket to Ride</li>
+          <li>Smallworld</li>
+          <li>Tsuro</li>
+          <li>Carcassone
+            <ul class="pl-10 list-disc">
+              <li>All the expansions</li>
+            </ul>
+          </li>
+          <li>Dominion
+            <ul class="pl-10 list-disc">
+              <li>Intrigue</li>
+              <li>Alchemy</li>
+              <li>Cornucopia</li>
+            </ul>
+          </li>
+          <li>Thunderstone</li>
+          <li>Pandemic
+            <ul class="pl-10 list-disc">
+              <li>On the Brink</li>
+              <li>In the Lab</li>
+            </ul>
+          </li>
+          <li>Dungeon!</li>
+          <li>Sequence</li>
+          <li>Pit</li>
+          <li>Bang!</li>
+          <li>Ultimate Werewolf</li>
+          <li>Powergrid</li>
+          <li>Dice City</li>
+          <li>Race for the Galaxy</li>
+          <li>Innovation</li>
+          <li>Above and Below</li>
+          <li>Kingdom Builder</li>
+          <li>Sagrada</li>
+          <li>Codenames</li>
+          <li>Cartographer</li>
+        </ul>
+        
+        <p class="pb-6">I think this is most of them. :)</p>
+        </div>
+
+      <!--Tags -->
+      <!-- <div class="text-base md:text-sm text-blue-500 px-4 py-6">
+        Tags:
+        <a
+          href="#"
+          class="text-base md:text-sm text-teal-500 no-underline hover:underline"
+        >
+          Link
+        </a>
+        .
+        <a
+          href="#"
+          class="text-base md:text-sm text-teal-500 no-underline hover:underline"
+        >
+          Link
+        </a>
+      </div> -->
+
+      <!--Divider-->
+      <!-- <hr class="border-b-2 border-gray-400 mb-8 mx-4" /> -->
+
+      <!--Next & Prev Links-->
+      <!-- <div class="font-sans flex justify-between content-center px-4 pb-12">
+        <div class="text-left">
+          <span class="text-xs md:text-sm font-normal text-blue-600"
+            >&lt; Previous Post</span
+          ><br />
+          <p>
+            <a
+              href="#"
+              class="break-normal text-base md:text-sm text-teal-500 font-bold no-underline hover:underline"
+            >
+              Blog title
+            </a>
+          </p>
+        </div>
+        <div class="text-right">
+          <span class="text-xs md:text-sm font-normal text-blue-600">
+            Next Post &gt;
+          </span>
+          <br />
+          <p>
+            <a
+              href="#"
+              class="break-normal text-base md:text-sm text-teal-500 font-bold no-underline hover:underline"
+            >
+              Blog title
+            </a>
+          </p>
+        </div>
+      </div> 
+
+    </div> -->
+    <!--/container-->
+
+    <footer class="border-t border-gray-400 shadow">
+      <div class="container w-full md:max-w-3xl mx-auto py-8 bg-gray-100">
+
+      <!-- <div class="container max-w-4xl mx-auto flex py-8"> -->
+        <div class="w-full mx-auto flex flex-wrap">
+          <div class="flex w-full md:w-1/2">
+            <div class="px-8">
+              <h3 class="font-bold text-blue-800">About</h3>
+              <p class="py-4 text-blue-600 text-sm">
+                rpgist (n): 1) one that specializes in the art or science or skill of RPGs, or 2) a blog about RPGs by @icosahedron<br><br>
+                Dice designed by Eric C. Harshbarger and used with permission. Dungeon Map by <a href="https://paratime.ca/cartography/blue_dungeons.html">Tim Hartin</a>.
+                Some icons made by <a href="https://www.flaticon.com/authors/freepik" class="text-blue-600 no-underline hover:text-blue-800 hover:text-underline">freepik</a>.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex w-full md:w-1/2">
+            <div class="px-8">
+              <h3 class="font-bold text-blue-800">Social</h3>
+              <ul class="list-reset items-center text-sm pt-3">
+                <li>
+                  <a
+                    class="flex flex-row inline-block text-blue-600 no-underline hover:text-blue-800 hover:text-underline py-1"
+                    href="mailto:gm@icosahedron.org" target="_blank">
+                    <img src="images/email.svg" class="w-6 h-6 pr-2 pb-1"> Email
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="flex flex-row inline-block text-blue-600 no-underline hover:text-blue-800 hover:text-underline py-1"
+                    href="https://twitter.com/icosahedron" target="_blank">
+                    <img src="images/Twitter_Social_Icon_Circle_Color.svg" class="w-6 h-6 pr-2 pb-1"> Twitter
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      /* Progress bar */
+      // Source: https://alligator.io/js/progress-bar-javascript-css-variables/
+      var h = document.documentElement,
+        b = document.body,
+        st = 'scrollTop',
+        sh = 'scrollHeight',
+        progress = document.querySelector('#progress'),
+        scroll;
+      var scrollpos = window.scrollY;
+      var header = document.getElementById('header');
+      var navcontent = document.getElementById('nav-content');
+
+      document.addEventListener('scroll', function () {
+        /* Refresh scroll % width */
+        scroll = ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100;
+        progress.style.setProperty('--scroll', scroll + '%');
+
+        /* Apply classes for slide in bar */
+        scrollpos = window.scrollY;
+
+        if (scrollpos > 10) {
+          header.classList.add('bg-grey-100');
+          header.classList.add('shadow');
+          // navcontent.classList.remove('bg-gray-100');
+          // navcontent.classList.add('bg-white');
+        } else {
+          // header.classList.remove('bg-white');
+          header.classList.remove('shadow');
+          // navcontent.classList.remove('bg-white');
+          // navcontent.classList.add('bg-gray-100');
+        }
+      });
+
+      // Javascript to toggle the menu
+      document.getElementById('nav-toggle').onclick = function () {
+        document.getElementById('nav-content').classList.toggle('hidden');
+      };
+    </script>
+  </body>
+</html>

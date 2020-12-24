@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>The RPGist</title>
+    <meta name="author" content="@icosahedron" />
+    <meta name="description" content="A blog agout RPGs, primarily D&D" />
+    <meta name="keywords" content="rpg, games, dice" />
+    <!--Replace with your tailwind.css once created-->
+    <link href="css/post.css" rel="stylesheet" />
+    <style>
+        body {
+            background: white center url(images/bluemap004.jpg);
+            background-attachment: fixed;
+            margin: 0px 0px 0px 0px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+</head>
+<!-- afcade -- ><!-- b9d3e3 -->
+<!-- 3182ce -->
+<!-- #90cdf4 -->
+
+<body class="bg-gray-100 text-blue-800 font-sans leading-normal tracking-normal">
+    <nav id="header" class="fixed w-full z-10 top-0 bg-gray-100">
+        <div id="progress" class="h-1 z-20 top-0" style="
+          background: linear-gradient(
+            to right,
+            #90cdf4 var(--scroll),
+            transparent 0
+          );
+        "></div>
+
+        <div class="w-full md:max-w-3xl mx-auto flex flex-wrap items-center justify-between mt-0 py-7">
+            <div class="pl-2 lg:pl-4 font-serif font-bold text-blue-800 text-3xl md:text-4xl lg:text-5xl">
+                <span class="flex flex-row">
+                    <a class="no-underline hover:no-underline" href="#">The RPGist</a>
+                    <img src="images/rpgdice.png" class="pl-4 h-8 md:h-10 lg:h-12 mt-1 lg:mt-2" /></span>
+            </div>
+            <!-- <div class="pl-2 lg:pl-10 pt-2"><img src="images/rpgdice.jpeg" class="h-8 lg:h-12" /></div> -->
+            <div class="block pr-6 lg:hidden">
+                <button id="nav-toggle"
+                    class="flex items-center px-3 py-2 border rounded text-blue-500 border-gray-600 hover:text-blue-800 hover:border-teal-500 appearance-none focus:outline-none">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+
+            <div id="nav-content"
+                class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-gray-100 md:bg-transparent z-20">
+                <ul class="list-reset lg:flex justify-end flex-1 items-center list-none">
+                    <li class="mr-3">
+                        <a class="inline-block py-2 px-4 lg:px-2 text-blue-600 font-bold no-underline"
+                            href="archive.html">
+                            Archive
+                        </a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="inline-block text-blue-600 no-underline hover:text-blue-800 hover:text-underline py-2 px-4 lg:px-2"
+                            href="colophon.html">
+                            Colophon
+                        </a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="inline-block text-blue-600 no-underline hover:text-blue-800 hover:text-underline py-2 px-4  lg:px-2"
+                            href="games.html">
+                            Games
+                        </a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="inline-block text-blue-600 no-underline hover:text-blue-800 hover:text-underline py-2 px-4 lg:px-2"
+                            href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <!--Container-->
+    <div class="container w-full md:max-w-3xl mx-auto pt-20 bg-gray-100">
+        <div class="px-4 md:px-6 text-xl text-blue-800 leading-normal font-sans">
+            <!--Title-->
+            <div class="font-sans">
+                <h1 class="font-bold font-sans break-normal text-blue-800 pt-6 pb-2 text-2xl md:text-3xl">
+                  I Perceive A Problem
+                </h1>
+                <p class="text-sm md:text-base font-normal text-blue-600 pb-6">
+                    Published January 2014
+                </p>
+            </div>
+<p class="pb-6">Over the holidays a brief discussion took place on Twitter about the
+utility of the various perception skills and how they should be divided.
+In particular, <a href="http://twitter.com/squach">@Squach</a> of the Tome Show
+podcast reasoned/ranted only the necessity for a Perception skill and
+that separate Search/Spot skills are redundant. (For this article I will
+refer all of these skills, whether a single Perception, specialized
+Search vs. Spot, and even Intuition, as general perception skills.)</p>
+
+<h2 class="text-2xl md:text-3xl pb-6">Skill System Problems</h2>
+
+<p class="pb-6">The first problem with general perception skills is that they are <em>too</em>
+general. Their utility begins to be a crutch, so much so that articles
+are written about how to avoid stalling an adventure over a failed
+perception skill check.</p>
+
+<p class="pb-6">Besides the debate about perception skills, D&amp;D has also suffered from
+unused or underused skills. Usually these skills are knowledge or trade
+skills; they often just take up space on the character sheet and are
+sometimes tossed token skill points for &#8220;character development.&#8221;</p>
+
+<p class="pb-6">So we have two problems with D&amp;D skills:</p>
+
+<ol class="list-outside list-decimal pb-6 pl-10">
+<li>Perception skill overload.</li>
+<li>Unused (wasted?) skills in the skill list</li>
+</ol>
+
+<p class="pb-6">Is it possible to solve them both? I believe yes.</p>
+
+<h2 class="text-2xl md:text-3xl pb-6">Perception Generally Considered Harmful</h2>
+
+<p class="pb-6">There should be no general perception skills. To notice or find
+something, you have to know what you&#8217;re looking for. This has two
+effects:</p>
+
+<ol class="list-outside list-decimal pb-6 pl-10">
+<li>other skills become more valuable</li>
+<li>attributes are more important</li>
+</ol>
+
+<h3 class="text-xl md:text-2xl pb-6">All Skills are More Valuable</h3>
+
+<p class="pb-6">How does this work? Let&#8217;s look at some examples:</p>
+
+<p class="pb-6">You&#8217;re in a room after having stopped the horrific rite of summoning
+from the netherworld. The riddle on the old parchment the wizard gave
+you says there is a key in the room that will lock the gate to the Abyss
+forever. But where is the key? There is no Search skill or Perception
+skill, so how do you find it?</p>
+
+<p class="pb-6">Well, the cleric probably knows something about the religion of this
+cult. Might his religious background give him an insight into where such
+an item might be hidden? Roll a Religion skill check.</p>
+
+<p class="pb-6">Or the party&#8217;s wizard, with his knowledge of magic, might know that the
+key must be kept within certain materials (e.g. lead box) if within a
+certain proximity of the gate. Roll an Arcana skill check.</p>
+
+<p class="pb-6">How about the venerable secret door? You&#8217;re in a dungeon that you&#8217;ve
+fully explored, but still haven&#8217;t found the artifact you were sent here
+to find. It&#8217;s possible it&#8217;s not really here, but your divinations
+indicate that it still is. It must therefore be somewhere you haven&#8217;t
+been yet, somewhere hidden, behind a secret door. How do you find it?</p>
+
+<p class="pb-6">Well, the dwarven fighter is an expert in dungeoneering. He would likely
+know how to spot the telltale signs of a doorway. He would know what
+kind of signs of workmanship would indicate a hidden passage and where
+it would be dangerous to place such a passage. Roll a Dungeoneering
+skill check.</p>
+
+<p class="pb-6">How about something more spontaneous? Your party enters a small book
+store looking for a book on town history. Easy, peasy, just roll History
+Knowledge (instead of Search).</p>
+
+<p class="pb-6">Knowledge skills become more valuable because they become more
+applicable. No more wondering what the engineering or dungeoneering
+skill is useful for. No more trying to stretch the circumstances where
+players can use these skills.</p>
+
+<h3 class="text-xl md:text-2xl pb-6">More than Just Knowledge</h3>
+
+<p class="pb-6">So we see how easy it is to adapt knowledge skills, but what about the
+other physical skills like Athletics (Climbing, Swimming, Jumping, et.
+al.) or Thievery? These skills are based on Strength or Dexterity. Can
+they be used for general perception?</p>
+
+<p class="pb-6">As the party is drudging through the mountains, an orc tribe is
+preparing an ambush. Does the party see the orcs hiding in the pass?
+Without general perception, how do we know? Based on our previous
+examples, we should use a skill that encompasses hiding&#8230; How about
+Hide or Thievery? If you know about hiding, it stands to reason that you
+could more easily spot someone who is hiding since you know what to look
+for.</p>
+
+<p class="pb-6">But it doesn&#8217;t take nimble fingers or a quick step (Dexterity) to spot
+someone hiding, you say? True, so just use your Wisdom or Intelligence
+attribute + the skill bonus as the skill roll modifier.</p>
+
+<p class="pb-6">Does that mean only the thief can see the hidden orcs? Of course not,
+everyone can roll to see; she just simply knows more and therefore is
+more likely to see them. You might even have the fighter roll a
+Knowledge (Tactics) or something similar if you want to.</p>
+
+<h3 class="text-xl md:text-2xl pb-6">Gut Checks</h3>
+
+<p class="pb-6">This guideline is not only for knowledge and practical skills, but the
+instinctive situations. Intuition could be considered a general
+perception skill.</p>
+
+<p class="pb-6">If we remove Intuition, how do we gut check? Again, depends on the
+situation. Want to know if someone is lying? It depends on how they are
+lying to you. If they are trying to beat you into submission, roll an
+Intimidate skill. Are they trying to smooth talk you? Since you know how
+to bluff, you might recognize it.</p>
+
+<p class="pb-6">Gut check skills (can) use Charisma. Given that Charisma is a more
+interactive or social attribute, this should work better than the more
+concrete skills of Wisdom or Intelligence. Since part of Charisma is
+knowing how to talk and act in given situations, detecting such
+chicanery should be easier with a higher Charisma.</p>
+
+<h3 class="text-xl md:text-2xl pb-6">Attribute Importance</h3>
+
+<p class="pb-6">Removing general perception skills has the side effect of making the
+Intelligence, Wisdom and Charisma attributes more useful. This is
+desirable because:</p>
+
+<ol class="list-outside list-decimal pb-6 pl-10">
+<li>that actually matches one of the goals for D&amp;D Next, to be more
+attribute driven over skills and feats,</li>
+<li>it makes the attribute increases more appealing, increasing the
+likelihood that players will select them rather than feats (since anything 
+that tempers the potential for overpowered feats is a
+good thing in my opinion).
+</ol>
+
+<h2 class="text-2xl md:text-3xl pb-6">An Exercise for the DM</h2>
+
+<p class="pb-6">This idea is not a panacea. It would add more tracking work for the GM.
+Rather than having the character&#8217;s Perception/Spot checks listed at his
+whim, he would likely need their entire skill set available for
+consultation when the characters can&#8217;t roll their own skill checks.</p>
+
+<p class="pb-6">Or, this could be an opportunity for more player involvement. Rather
+than rolling a silent check behind the screen, the GM could solicit
+ideas from the players about how their skills might apply. A well
+role-played explanation might even yield a bonus.</p>
+
+<p class="pb-6">I encourage discussion and hope to hear your opinion via e-mail or on
+Twitter (@icosahedron). Thanks for reading.</p>
+</div>
+</div>
+
+<footer class="border-t border-gray-400 shadow">
+  <div class="container w-full md:max-w-3xl mx-auto py-8 bg-gray-100">
+
+      <!-- <div class="container max-w-4xl mx-auto flex py-8"> -->
+      <div class="w-full mx-auto flex flex-wrap">
+          <div class="flex w-full md:w-1/2">
+              <div class="px-8">
+                  <h3 class="font-bold text-blue-800">About</h3>
+                  <p class="py-4 text-blue-600 text-sm">
+                      rpgist (n): 1) one that specializes in the art or science or skill of RPGs, or 2) a
+                      blog about RPGs by @icosahedron<br><br>
+                      Dice designed by Eric C. Harshbarger and used with permission. Dungeon Map by <a
+                      class="text-blue-600 no-underline hover:text-blue-800 hover:text-underline"
+                      href="https://paratime.ca/cartography/blue_dungeons.html">Tim Hartin</a>.
+                      Some icons made by <a href="https://www.flaticon.com/authors/freepik" class="text-blue-600 no-underline hover:text-blue-800 hover:text-underline">freepik</a>.
+                  </p>
+              </div>
+          </div>
+
+          <div class="flex w-full md:w-1/2">
+              <div class="px-8">
+                  <h3 class="font-bold text-blue-800">Social</h3>
+                  <ul class="list-reset items-center text-sm pt-3">
+                      <li>
+                          <a class="flex flex-row inline-block text-blue-600 no-underline hover:text-blue-800 hover:text-underline py-1"
+                              href="mailto:gm@icosahedron.org" target="_blank">
+                              <img src="images/email.svg" class="w-6 h-6 pr-2 pb-1"> Email
+                          </a>
+                      </li>
+                      <li>
+                          <a class="flex flex-row inline-block text-blue-600 no-underline hover:text-blue-800 hover:text-underline py-1"
+                              href="https://twitter.com/icosahedron" target="_blank">
+                              <img src="images/Twitter_Social_Icon_Circle_Color.svg"
+                                  class="w-6 h-6 pr-2 pb-1"> Twitter
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+
+<script>
+  /* Progress bar */
+  // Source: https://alligator.io/js/progress-bar-javascript-css-variables/
+  var h = document.documentElement,
+      b = document.body,
+      st = 'scrollTop',
+      sh = 'scrollHeight',
+      progress = document.querySelector('#progress'),
+      scroll;
+  var scrollpos = window.scrollY;
+  var header = document.getElementById('header');
+  var navcontent = document.getElementById('nav-content');
+
+  document.addEventListener('scroll', function () {
+      /* Refresh scroll % width */
+      scroll = ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100;
+      progress.style.setProperty('--scroll', scroll + '%');
+
+      /* Apply classes for slide in bar */
+      scrollpos = window.scrollY;
+
+      if (scrollpos > 10) {
+          header.classList.add('bg-grey-100');
+          header.classList.add('shadow');
+          // navcontent.classList.remove('bg-gray-100');
+          // navcontent.classList.add('bg-white');
+      } else {
+          // header.classList.remove('bg-white');
+          header.classList.remove('shadow');
+          // navcontent.classList.remove('bg-white');
+          // navcontent.classList.add('bg-gray-100');
+      }
+  });
+
+  // Javascript to toggle the menu
+  document.getElementById('nav-toggle').onclick = function () {
+      document.getElementById('nav-content').classList.toggle('hidden');
+  };
+</script>
+<script>
+  katex.render("\\frac{1}{6} \\approx 17\\%", one_over_six_approx_17_percent);
+  katex.render("\\approx", approx);
+  katex.render("6 \\times 17 = 102", six_times_seventeen_equals_102)
+  katex.render("\\frac{1}{6} = 0.1\\overline{66}", one_sixth_equals_0_1overline66);
+</script>            
+</body>
+
+</html>

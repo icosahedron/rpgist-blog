@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>The RPGist</title>
+    <meta name="author" content="@icosahedron" />
+    <meta name="description" content="A blog agout RPGs, primarily D&D" />
+    <meta name="keywords" content="rpg, games, dice" />
+    <!--Replace with your tailwind.css once created-->
+    <link href="css/post.css" rel="stylesheet" />
+    <style>
+        body {
+            background: white center url(images/bluemap004.jpg);
+            background-attachment: fixed;
+            margin: 0px 0px 0px 0px;
+        }
+    </style>
+</head>
+<!-- afcade -- ><!-- b9d3e3 -->
+<!-- 3182ce -->
+<!-- #90cdf4 -->
+
+<body class="bg-gray-100 text-blue-800 font-sans leading-normal tracking-normal">
+    <nav id="header" class="fixed w-full z-10 top-0 bg-gray-100">
+        <div id="progress" class="h-1 z-20 top-0" style="
+          background: linear-gradient(
+            to right,
+            #90cdf4 var(--scroll),
+            transparent 0
+          );
+        "></div>
+
+        <div class="w-full md:max-w-3xl mx-auto flex flex-wrap items-center justify-between mt-0 py-7">
+            <div class="pl-2 lg:pl-4 font-serif font-bold text-blue-800 text-3xl md:text-4xl lg:text-5xl">
+                <span class="flex flex-row">
+                    <a class="no-underline hover:no-underline" href="#">The RPGist</a>
+                    <img src="images/rpgdice.png" class="pl-4 h-8 md:h-10 lg:h-12 mt-1 lg:mt-2" /></span>
+            </div>
+            <!-- <div class="pl-2 lg:pl-10 pt-2"><img src="images/rpgdice.jpeg" class="h-8 lg:h-12" /></div> -->
+            <div class="block pr-6 lg:hidden">
+                <button id="nav-toggle"
+                    class="flex items-center px-3 py-2 border rounded text-blue-500 border-gray-600 hover:text-blue-800 hover:border-teal-500 appearance-none focus:outline-none">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+
+            <div id="nav-content"
+                class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-gray-100 md:bg-transparent z-20">
+                <ul class="list-reset lg:flex justify-end flex-1 items-center list-none">
+                    <li class="mr-3">
+                        <a class="inline-block py-2 px-4 lg:px-2 text-blue-600 font-bold no-underline"
+                            href="archive.html">
+                            Archive
+                        </a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="inline-block text-blue-600 no-underline hover:text-blue-800 hover:text-underline py-2 px-4 lg:px-2"
+                            href="colophon.html">
+                            Colophon
+                        </a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="inline-block text-blue-600 no-underline hover:text-blue-800 hover:text-underline py-2 px-4  lg:px-2"
+                            href="games.html">
+                            Games
+                        </a>
+                    </li>
+                    <li class="mr-3">
+                        <a class="inline-block text-blue-600 no-underline hover:text-blue-800 hover:text-underline py-2 px-4 lg:px-2"
+                            href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <!--Container-->
+    <div class="container w-full md:max-w-3xl mx-auto pt-20 bg-gray-100">
+        <div class="px-4 md:px-6 text-xl text-blue-800 leading-normal font-sans">
+            <!--Title-->
+            <div class="font-sans">
+                <h1 class="font-bold font-sans break-normal text-blue-800 pt-6 pb-2 text-2xl md:text-3xl">
+                    Baldur’s Gate Enhanced Edition Fallen Ranger Restore
+                </h1>
+                <p class="text-sm md:text-base font-normal text-blue-600 pb-6">
+                    Published April 2016
+                </p>
+            </div>
+<p class="pb-6">(This article is valid as of 5/1/2016. It works on Mac and PC, but not
+iPad.)</p>
+
+<p class="pb-6">I’ve been playing Baldur’s Gate: Enhanced Edition (BGEE) since GOG.com
+had it on sale for $2.99 a few weeks back. I’m not very far along,
+mostly due to time constraints, but I did manage to have my ranger
+become fallen.</p>
+
+<p class="pb-6">I don’t know why, and the last few save games he was already fallen, and
+I didn’t feel like backtracking that far in the game.</p>
+
+<p class="pb-6">A few searches later, and I found that it was relatively easy to restore
+a ranger from their fallen state via a script, but the instructions were
+a bit dated and I had to figure some steps on my own, so I thought this
+guide might be handy for others as well.</p>
+
+<p class="pb-6">First, these instructions are for OS X since I’m running BGEE on OS X.
+They are likely easy to apply to Windows, and the links I have below
+mention instructions for Windows.</p>
+
+<p class="pb-6">I do assume that you are comfortable with Terminal, moving around
+directories, and running command line programs in OS X.</p>
+
+<h2 class="text-2xl md:text-3xl pb-6">On the Shoulders</h2>
+
+<p class="pb-6">First, I took most of the information from the following 2 links. The
+first references the second, but I included it since it has most of the
+necessary information:</p>
+
+<ul class="pl-2 pb-6">
+<li><a href="https://forums.beamdog.com/discussion/10856/recovering-fallen-paladinranger" class="text-blue-600 no-underline hover:text-blue-800 hover:text-underline">Recovering a Fallen Paladin or
+Ranger</a><a href="#fn:1" id="fnref:1" title="see footnote" class="text-sm align-top">1</a></li>
+<li><a href="https://forums.beamdog.com/discussion/6950/player-how-to-getting-mods-to-work-on-bgee/p1" class="text-blue-600 no-underline hover:text-blue-800 hover:text-underline">Getting Mods to Work in
+BGEE</a></li>
+</ul>
+
+<p class="pb-6">With these two links you are likely to get everything you need, but they
+do have some outdated information and reference utilities that either
+aren’t available anymore or aren’t really necessary.</p>
+
+<p class="pb-6">Also, they assume a little more knowledge of BGEE scripting than I had,
+so I have augmented some of their instructions with a little more
+detail.</p>
+
+<h2 class="text-2xl md:text-3xl pb-6">Setup (Download and Locate)</h2>
+
+<p class="pb-6">First, download the WeiDU script compiler. I found it at
+<a href="http://www.weidu.org/~thebigg/" class="text-blue-600 no-underline hover:text-blue-800 hover:text-underline">http://www.weidu.org/~thebigg/</a>. Decompress it to somewhere accessible
+(I left mine in the Downloads directory - <code class="font-mono text-sm">~/Downloads/WeiDU-Mac</code>).</p>
+
+<p class="pb-6">Next, we need to locate where the script should be placed. The
+instructions mention to locate the <span class="font-mono text-sm">chitin.key</span> file. I guess Spotlight
+doesn’t search application bundles, but I did find it eventually buried
+within the app within the app.</p>
+
+<p class="pb-6">The final resting place was
+<code class="font-mono text-sm">/Applications/Baldur's Gate Enhanced Edition.app/Contents/Resources/game/Baldur's Gate - Enhanced Edition.app/Contents/Resources</code>.
+Probably the easiest thing to do is to open a terminal and <code class="font-mono text-sm">cd</code> to
+that directory.</p>
+
+<p class="pb-6">The last thing for setup is making sure that WeiDU can work with the
+BGEE installation. The second link talks about doing this:</p>
+
+<pre class="bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4 overflow-auto">
+<code>ln -s ./lang/en_US/dialog.tlk dialog.tlk
+</code></pre>
+
+<h2 class="text-2xl md:text-3xl py-6">Script and Compile</h2>
+
+<p class="pb-6">Now come the changes to restore your ranger.</p>
+
+<p class="pb-6">Open your favorite text editor and put in the following script:</p>
+
+<pre class="bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4 overflow-auto">
+<code>IF
+  HotKey(D)
+THEN
+  RESPONSE #100
+    RegainRangerHood()
+END</code>
+</pre>
+
+<p class="py-6">Save this into the BGEE directory (I saved it as FallenRanger.baf).</p>
+
+<p class="pb-6">Compile this script into something that BGEE can use:</p>
+
+<pre class="bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4 overflow-auto">
+<code>~/Downloads/WeiDU-Mac/weidu FallenRanger.baf --out scripts --use-lang en_US</code>
+</pre>
+
+<p class="py-6">Last, we have to fix up some of the output to be digestible by BGEE.</p>
+
+<pre class="bg-gray-900 rounded text-white font-mono text-base p-2 md:p-4 overflow-auto">
+<code>cd scripts
+mv FallenRanger.bcs aFall.BS
+chmod ugo+x aFall.BS
+</code></pre>
+
+<p class="py-6">I don’t know why the scripts have to be marked executable, but they are,
+so I followed suit. They don’t appear in BGEE unless they are marked as
+such.</p>
+
+<h2 class="text-2xl md:text-3xl pb-6">“Gorion Would Be Proud of You”</h2>
+
+<p class="pb-6">That magic moment where we again ascend to ranger hood and can charm
+animals and hate on orcs or giants.</p>
+
+<ul class="list-outside list-disc pb-6 pl-10">
+<li>Open BGEE and load your saved game file.</li>
+<li>Turn off Party AI.</li>
+<li>Click on your character.</li>
+<li>Select the character screen, choose customize, choose script, and
+note the currently selected script.</li>
+<li>Find CUSTOM(AFALL) in the list near the bottom, choose it, choose
+done, done, and ESC to exit that screen.</li>
+<li>Select another character.</li>
+<li>Choose Party AI On.</li>
+<li>Select your character again. Type ‘D’. You should hear a message
+similar to “Gorion would be proud of your actions.”</li>
+<li>Go back and choose the script for your character that was
+chosen before. (See above instructions.)</li>
+<li>Save your game.</li>
+</ul>
+
+<p class="pb-6">Voilà, you are now a ranger again!</p>
+
+<hr />
+
+<div class="footnotes">
+<hr />
+<ol class="list-decimal list-inside pt-6 pb-6">
+
+<li id="fn:1">
+This link also works for fallen paladins too, though the script
+would be changed to call <code class="text-sm font-mono">RegainPaladinHood()</code>. The directions in the
+remainder of the document remain the same. <a href="#fnref:1" title="return to article" class="reversefootnote">&#160;&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+</div>
+
+<footer class="border-t border-gray-400 shadow">
+  <div class="container w-full md:max-w-3xl mx-auto py-8 bg-gray-100">
+
+      <!-- <div class="container max-w-4xl mx-auto flex py-8"> -->
+      <div class="w-full mx-auto flex flex-wrap">
+          <div class="flex w-full md:w-1/2">
+              <div class="px-8">
+                  <h3 class="font-bold text-blue-800">About</h3>
+                  <p class="py-4 text-blue-600 text-sm">
+                      rpgist (n): 1) one that specializes in the art or science or skill of RPGs, or 2) a
+                      blog about RPGs by @icosahedron<br><br>
+                      Dice designed by Eric C. Harshbarger and used with permission. Dungeon Map by <a
+                      class="text-blue-600 no-underline hover:text-blue-800 hover:text-underline"
+                      href="https://paratime.ca/cartography/blue_dungeons.html">Tim Hartin</a>.
+                      Some icons made by <a href="https://www.flaticon.com/authors/freepik" class="text-blue-600 no-underline hover:text-blue-800 hover:text-underline">freepik</a>.
+                  </p>
+              </div>
+          </div>
+
+          <div class="flex w-full md:w-1/2">
+              <div class="px-8">
+                  <h3 class="font-bold text-blue-800">Social</h3>
+                  <ul class="list-reset items-center text-sm pt-3">
+                      <li>
+                          <a class="flex flex-row inline-block text-blue-600 no-underline hover:text-blue-800 hover:text-underline py-1"
+                              href="mailto:gm@icosahedron.org" target="_blank">
+                              <img src="images/email.svg" class="w-6 h-6 pr-2 pb-1"> Email
+                          </a>
+                      </li>
+                      <li>
+                          <a class="flex flex-row inline-block text-blue-600 no-underline hover:text-blue-800 hover:text-underline py-1"
+                              href="https://twitter.com/icosahedron" target="_blank">
+                              <img src="images/Twitter_Social_Icon_Circle_Color.svg"
+                                  class="w-6 h-6 pr-2 pb-1"> Twitter
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+
+<script>
+  /* Progress bar */
+  // Source: https://alligator.io/js/progress-bar-javascript-css-variables/
+  var h = document.documentElement,
+      b = document.body,
+      st = 'scrollTop',
+      sh = 'scrollHeight',
+      progress = document.querySelector('#progress'),
+      scroll;
+  var scrollpos = window.scrollY;
+  var header = document.getElementById('header');
+  var navcontent = document.getElementById('nav-content');
+
+  document.addEventListener('scroll', function () {
+      /* Refresh scroll % width */
+      scroll = ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100;
+      progress.style.setProperty('--scroll', scroll + '%');
+
+      /* Apply classes for slide in bar */
+      scrollpos = window.scrollY;
+
+      if (scrollpos > 10) {
+          header.classList.add('bg-grey-100');
+          header.classList.add('shadow');
+          // navcontent.classList.remove('bg-gray-100');
+          // navcontent.classList.add('bg-white');
+      } else {
+          // header.classList.remove('bg-white');
+          header.classList.remove('shadow');
+          // navcontent.classList.remove('bg-white');
+          // navcontent.classList.add('bg-gray-100');
+      }
+  });
+
+  // Javascript to toggle the menu
+  document.getElementById('nav-toggle').onclick = function () {
+      document.getElementById('nav-content').classList.toggle('hidden');
+  };
+</script>
+</body>
+
+</html>
