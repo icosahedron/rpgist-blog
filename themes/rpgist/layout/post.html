@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- Chrome, Firefox OS and Opera Status Bar Color -->
+  <meta name="theme-color" content="#FFFFFF">
+  <meta property="og:title" content="{{post.title}}">
+  {{if(options.post.description.length > 0)}}
+  <meta name="description" content="{{post.descriptionPlain}}">
+  <meta property="og:description" content="{{post.descriptionPlain}}">
+  {{/if}}
+  <meta property="og:type" content="blog">
+  <title>{{post.title}}</title>
+  <!-- Favicon -->
+  {{if(options.siteMeta.icon)}}
+  <link rel="shortcut icon" href="{{siteMeta.icon}}">
+  {{/if}}
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css">
+  <link rel="stylesheet" type="text/css" href="css/SourceSansPro.css">
+  <link rel="stylesheet" type="text/css" href="css/notablog.css">
+  <link rel="stylesheet" type="text/css" href="css/theme.css">
+  <link rel="stylesheet" type="text/css" href="css/tailwind.css">
+  <style>
+    :root {
+      font-size: 18px;
+    }
+
+    .DateTagBar {
+      margin-top: 1.0rem;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="Navbar">
+    <a href="index.html">
+      <div class="Navbar__Btn">{{siteMeta.iconHTML}} <span>Home</span></div>
+    </a>
+    {{each(options.siteMeta.pages)}}
+    {{if(@this.publish && @this.inMenu)}}
+    <span class="Navbar__Delim">&centerdot;</span>
+    <a href="{{@this.url}}">
+      <div class="Navbar__Btn">{{@this.iconHTML}} <span>{{@this.title}}</span></div>
+    </a>
+    {{/if}}
+    {{/each}}
+  </nav>
+  <header class="Header">
+      {{if(options.post.cover)}}
+    <div class="Header__Cover">
+        <img src="{{post.cover}}">
+      </div>
+      {{/if}}
+    <div class="Header__Spacer {{if(!options.post.cover)}}Header__Spacer--NoCover{{/if}}">
+    </div>
+    {{if(options.post.icon)}}
+    <div class="Header__Icon">{{post.iconHTML}}</div>
+    {{/if}}
+    <h1 class="Header__Title">{{post.title}}</h1>
+        {{if(options.post.date || options.post.tags.length)}}
+    <div class="DateTagBar">
+          {{if(options.post.date)}}
+      <span class="DateTagBar__Item DateTagBar__Date">Posted on {{post.dateString}}</span>
+          {{/if}}
+          {{each(options.post.tags)}}
+      <span class="DateTagBar__Item DateTagBar__Tag DateTagBar__Tag--{{@this.color}}">
+            <a href="tag/{{@this.value}}.html">{{@this.value}}</a>
+          </span>
+          {{/each}}
+        </div>
+        {{/if}}
+  </header>
+      {{post.contentHTML}}
+      <footer class="PageRoot">
+        <div class="container w-full md:max-w-3xl mx-auto py-8">
+  
+            <!-- <div class="container max-w-4xl mx-auto flex py-8"> -->
+            <div class="w-full mx-auto flex flex-wrap">
+                <div class="flex w-full md:w-1/2">
+                    <div class="px-8">
+                        <h3 class="font-bold ">About</h3> <!--text-blue-800 -->
+                        <p class="py-4 text-sm"> <!-- text-blue-600 -->
+                            rpgist (n): 1) one that specializes in the art, science, or skill of RPGs, or 2) a
+                            blog about RPGs by @icosahedron<br><br>
+                            Dungeon Map by <a href="https://paratime.ca/cartography/blue_dungeons.html">Tim Hartin</a>.
+                            Some icons made by <a href="https://www.flaticon.com/authors/freepik" class="no-underline hover:text-underline">freepik</a>.
+                        </p>
+                    </div>
+                </div>
+  
+                <div class="flex w-full md:w-1/2">
+                    <div class="px-8">
+                        <h3 class="font-bold">Social</h3> <!-- text-blue-800 -->
+                        <ul class="list-reset items-center text-sm pt-3">
+                            <li>
+                                <a class="flex flex-row inline-block no-underline hover:text-underline py-1" href="mailto:gm@icosahedron.org" target="_blank"> 
+                                    <img src="images/email.svg" class="w-6 h-6 pr-2 pb-1"> Email
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flex flex-row inline-block no-underline hover:text-underline py-1" href="https://twitter.com/icosahedron" target="_blank"> <!-- text-blue-600 hover:text-blue-800 -->
+                                    <img src="images/Twitter_Social_Icon_Circle_Color.svg" class="w-6 h-6 pr-2 pb-1"> Twitter
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+  </body>
+
+</html>
