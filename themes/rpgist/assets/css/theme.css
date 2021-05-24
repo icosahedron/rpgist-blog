@@ -602,8 +602,9 @@ pre.Code code {
 /* Heading */
 
 .Heading {
+  margin-top: -1.5rem;
   margin-bottom: 1px;
-  padding: 3px 2px;
+  padding: 0px 0px;
 }
 
 /* Font-related CSS should be applied on ".SemanticString". */
@@ -622,7 +623,6 @@ pre.Code code {
 }
 
 .Heading--2 {
-  margin-top: 1rem;
 }
 
 .Heading--2 .SemanticString {
@@ -631,7 +631,6 @@ pre.Code code {
 }
 
 .Heading--3 {
-  margin-top: 0.5rem;
 }
 
 .Heading--3 .SemanticString {
